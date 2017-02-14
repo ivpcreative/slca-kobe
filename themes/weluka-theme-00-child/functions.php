@@ -62,7 +62,6 @@ function getTherapyAnker() {
 /* ボタンを変数化*/
 $ankerlink = <<<EOT
 <ul class="therapy-anker">
-<li><a class="menu" href="/therapy/">初診時の流れ</a></li>
 <li><a class="menu" href="#comment">治療法の解説</a></li>
 <li><a class="menu" href="#flow">治療当日の流れ</a></li>
 <li><a class="menu" href="#point">治療のポイント</a></li>
