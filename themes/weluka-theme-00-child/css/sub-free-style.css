@@ -1,0 +1,299 @@
+/* sub-style
+各サイト特有のCSSを記述
+*/
+
+
+/*デフォルト設定変更*/
+
+html {
+    font-size: 45.0%; //スマホの倍率、PCはメディアクエリに記載
+}
+
+body {
+    font-family: Hiragino Sans, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Roboto, "Droid Sans", YuGothic, "游ゴシック", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    color: #333333;
+    background-color: #fff;
+    //background-color: #fff0bb;
+    font-size: 1.5rem;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    //margin: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+#main-content h1 {
+    margin: 0 0 0.2rem;
+    padding: 0.8rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border: 2px solid #193E72;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+#main-content h2 {
+    font-size: 2.0rem;
+    border-left: 7px solid #193E72;
+    border-bottom: 1px solid #193E72;
+    padding: .6em .8em;
+    font-weight: bold;
+    margin: 20px 0px 5px 0px;
+}
+
+#main-content h4 {
+    border-left: 7px solid #193E72;
+    border-bottom: 1px solid #193E72;
+    padding: .6em .8em;
+    font-weight: bold;
+    margin: 20px 0px 5px 0px;
+}
+
+#main-content p {
+    margin-bottom: 1.2rem;
+}
+
+
+/* table*/
+/*テーブルをスマホ時に構造を変化*/
+   #main-content table th {
+       background: #DFECF7;
+       white-space:nowrap;
+}
+/*スマホ時のみテーブル構造変化(最初にblockをかけると上書きしてテーブルに戻させないため、特別に記載)*/
+@media only screen and (max-width:767px) {
+#main-content table th,
+#main-content table td {
+        width: 100%;
+        display: block;
+        border-top: none;
+    }
+}
+/* end.table*/
+
+.readtext {
+    text-align: center;
+}
+
+.img-arrowblue {
+    padding-top: 0px;
+}
+
+.text-imgflow {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.text-imgflow-def {}
+
+.readtext-def {}
+
+.readtext .h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+}
+
+.readtext .h3 {
+    font-size: 250%;
+    font-weight: normal;
+    margin: auto 5px;
+    color: #e03730;
+    font-weight: 900;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.weluka-bl-title {
+    border-left: 5px solid #193e72;
+    font-size: 17.5px;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+tabmenu {}
+
+tabmenu-def {}
+
+//カテゴリショートコード
+.getPostDispArea .getPost {
+    border: 2px solid #9a9a9a;
+    padding: 15px;
+    margin: 10px 0px;
+    background-color: #e4f4ff;
+}
+
+.getPostDispArea .getPost:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.getPostImgArea {
+    width: 20%;
+    float: left;
+}
+
+.getPostStringArea {
+    width: 80%;
+    padding-left: 15px;
+    float: left;
+}
+
+h4.getPostTitle {
+    color: #193E72;
+    font-weight: bold;
+}
+
+
+/*heade navi*/
+
+.navbar-brand {
+    padding: 1px;
+}
+
+.weluka-nav a {
+    display: inline;
+    padding: 3px 3px;
+    margin-left: 5px;
+}
+
+
+/* Bogo */
+
+.bogo-line ul {
+    display: table;
+    table-layout: fixed;
+}
+
+.bogo-line ul li {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-right: 5px;
+    vertical-align: middle;
+    padding-top: 3px;
+}
+
+.bogo-line ul li:first-child {
+    border: none;
+}
+
+.bogo-line ul li a {
+    // text-decoration:none;
+    color: #193E72;
+}
+
+
+/* 現在選択してる言語は非表示 */
+
+.bogo-language-switcher .current {
+    display: none;
+}
+
+
+/* セラピー(治療ページ) */
+
+.therapybtn {
+    float: left;
+    margin: 2px 2px;
+}
+
+.therapybtn-def {}
+
+.therapybtn-current {
+    background-color: #e6e6e6;
+}
+
+.therapy-anker {
+    font-size: 0;
+}
+
+.therapy-anker li {
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 20%;
+}
+
+
+/* 住所 */
+
+.address {
+    font-size: 1.3rem;
+}
+
+.address-def {}
+
+
+/* スマホアイコン (出しわけはweluka UIで操作)*/
+
+.spicon {}
+
+.spicon li {
+    list-style: none;
+    float: left;
+    margin: 5px 1px 0 0;
+    width: 24%;
+}
+
+.spicon li a {
+    display: block;
+    //height: 80px;
+    background: #7d3e6d;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    text-align: center;
+}
+
+
+/* 768px以上 */
+
+@media (min-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+    .img-arrowblue {
+        padding-top: 40px;
+    }
+    /* table */
+    
+    #main-content table th {
+        padding: 12px 12px 12px 24px;
+        text-align: left;
+       // width: 25%;
+        border: 1px solid #000;
+
+    }
+
+    #main-content table td {
+        border: 1px solid #000;
+        padding: 12px 12px 12px 24px;
+        text-align: left;
+    }
+    /* end.table */
+}
