@@ -91,6 +91,16 @@ h6 {
 }
 /* end.table*/
 
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align:right;
+}
+.text-right {
+    text-align:left;
+}
+
 .readtext {
     text-align: center;
 }
