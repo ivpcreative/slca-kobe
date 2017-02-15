@@ -38,7 +38,17 @@ function delete_hostname_from_attachment_url( $url ) {
 add_filter( 'wp_get_attachment_url', 'delete_hostname_from_attachment_url' );
 add_filter( 'attachment_link', 'delete_hostname_from_attachment_url' );
 
-
+/*固定ページにカテゴリを追加*/
+add_action('init', 'karakuri_add_category_to_page');
+function karakuri_add_category_to_page()
+{
+	register_taxonomy_for_object_type('category', 'page');
+}
+add_action('init', 'karakuri_add_tag_to_page');
+function karakuri_add_tag_to_page()
+{
+	register_taxonomy_for_object_type('post_tag', 'page');
+}
 
 /*-------------------------------------------*/
 /*  <head>タグ内に自分の追加したいタグを追加する
