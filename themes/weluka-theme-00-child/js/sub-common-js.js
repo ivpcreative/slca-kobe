@@ -17,7 +17,7 @@ jQuery(function () {
     
      //行の高さをそろえるClass名を記載(jquery-fixHeightSimple.js)
    // jQuery(".home-bottom-text").fixHeightSimple();
-    jQuery(".team-ex-text-skin").fixHeightSimple();
+    //jQuery(".team-ex-text-skin").fixHeightSimple();
 
     //レスポンシブにてイメージマップのリンクずれを自動修正する
     jQuery('img[usemap]').rwdImageMaps();

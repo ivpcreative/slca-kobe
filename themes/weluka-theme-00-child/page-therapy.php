@@ -12,6 +12,7 @@ global $weluka_themename;
 
 /* ボタンを変数化*/
 $terapybtn = <<<EOT
+
 <div id="" class="weluka-section " style="s-therapybtn">
 	<div class="weluka-container clearfix">
 		<div id="" class="weluka-row clearfix ">
@@ -30,19 +31,21 @@ $terapybtn = <<<EOT
 </div>
 EOT;
 
-echo $terapybtn ;
 ?>
+<div class="content-therapy">
+<?php    
+echo $terapybtn ;
 
-
-<?php
 if ( have_posts() ) :
 	get_template_part( 'content', get_post_format() );
 else:
 	get_template_part( 'content', 'none' );
 
 endif;
+
 echo $terapybtn
 ?>
+
 <div id="" class="weluka-section " style="s-therapy-webbtn">
 	<div class="weluka-container clearfix">    
 		<div id="" class="weluka-row clearfix ">
@@ -53,7 +56,7 @@ echo $terapybtn
 		</div>
 	</div>
 </div>
-
+</div><!--end class=therapy-->
 <script>
 jQuery(function () {
     var pathname = location.pathname;

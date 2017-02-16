@@ -38,7 +38,7 @@ function delete_hostname_from_attachment_url( $url ) {
 add_filter( 'wp_get_attachment_url', 'delete_hostname_from_attachment_url' );
 add_filter( 'attachment_link', 'delete_hostname_from_attachment_url' );
 
-/*固定ページにカテゴリを追加*/
+/*固定ページにカテゴリ・タグを追加*/
 add_action('init', 'karakuri_add_category_to_page');
 function karakuri_add_category_to_page()
 {
@@ -83,11 +83,20 @@ return $ankerlink ;
 }
 add_shortcode('therapy-anker', 'getTherapyAnker');
 
+/*-------------------------------------------*/
+/*  ショートコードでWEBボタンを呼び出す
+/*-------------------------------------------*/
+function getBtnWeb() {
+/* ボタンを変数化*/
+$ankerlink = <<<EOT
+<a href="/mail_reservation.html">
+<img class="img-responsive" src="/wp-content/uploads/therapy/icons_bunner_reservation.jpg" alt="" width="" height="">
+</a>
+EOT;
 
-function wbfunc1() {
-    return "私はホワイトベアー株式会社のコネル飯塚です";
+return $ankerlink ;
 }
-add_shortcode('wbcode1', 'wbfunc1');
+add_shortcode('btn-web', 'getBtnWeb');
 
 /*-------------------------------------------*/
 /*  ショートコードでカテゴリ一覧を呼び出す

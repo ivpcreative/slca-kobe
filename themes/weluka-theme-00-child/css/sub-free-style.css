@@ -39,6 +39,15 @@ h6 {
     -webkit-margin-end: 0;
 }
 
+a{
+    color: #00579C;
+    text-decoration: underline;
+}
+a:hover {
+    color: #002F55;
+  
+}
+
 #main-content h1 {
     margin: 0 0 0.2rem;
     padding: 0.8rem;
@@ -247,6 +256,24 @@ h4.getPostTitle {
     font-size: 1.2rem;
     display: inline-block;
     width: 20%;
+}
+
+.btn-web{
+        margin: 0.7em 0;
+    max-width: 100% !important;
+    text-align: center;
+}
+
+.text-q {
+    color:#156ABE;
+}
+.text-q::first-letter {
+    font-size: 4rem;
+}
+
+.text-a::first-letter {
+    color: #ff0000;
+    font-size: 4rem;
 }
 
 
