@@ -90,7 +90,7 @@ function getBtnWeb() {
 /* ボタンを変数化*/
 $ankerlink = <<<EOT
 <a href="/mail_reservation.html">
-<img class="img-responsive" src="/wp-content/uploads/therapy/icons_bunner_reservation.jpg" alt="" width="" height="">
+<img class="img-responsive img-webbtn" src="/wp-content/uploads/therapy/icons_bunner_reservation.jpg" alt="" width="" height="">
 </a>
 EOT;
 
