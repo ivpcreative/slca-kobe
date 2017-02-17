@@ -153,9 +153,6 @@ a:hover {
     font-weight: 600;
 }
 
-tabmenu {}
-
-tabmenu-def {}
 
 //カテゴリショートコード
 .getPostDispArea .getPost {
@@ -267,36 +264,29 @@ h4.getPostTitle {
 .text-q {
     color:#156ABE;
 }
-.text-q::first-letter {
+.text-q > p::first-letter{
     font-size: 4rem;
 }
 
-.text-a::first-letter {
+.text-a > p::first-letter{
     color: #ff0000;
     font-size: 4rem;
 }
 
-
-/* 住所 */
-
-.address {
-    font-size: 1.3rem;
-}
-
-.address-def {}
-
-
-/*BOTOX*/
 .tbl-header{
 	background-color:paleturquoise;
 	font-weight: 900;
 }
-					
+
+
+
+
+
 .tbl-nav{
 	background-color:lightcyan;
 	font-weight: 700;
 }
-									
+					
 .pickup{
 	color: #FF0000;
 	font-weight: 700;
@@ -309,6 +299,16 @@ h4.getPostTitle {
 .img-responsive{
 	margin: auto;
 }
+
+
+/* 住所 */
+
+.address {
+    font-size: 1.3rem;
+}
+
+.address-def {}
+
 
 
 /* スマホアイコン (出しわけはweluka UIで操作)*/
@@ -333,8 +333,15 @@ h4.getPostTitle {
 }
 
 
-/* 768px以上 */
+/* スマホだけ非表示(モバイルファーストだが仕方なし) */
+@media screen and (max-width: 768px){
+#main-content table .tbl-nav{
+      display:none; /* PC only */ 
+}
+}
+/* end.スマホだけ非表示 */
 
+/* 768px以上 */
 @media (min-width: 768px) {
     html {
         font-size: 62.5%;
@@ -347,7 +354,6 @@ h4.getPostTitle {
     #main-content table th {
         padding: 12px 12px 12px 24px;
         text-align: left;
-       // width: 25%;
         border: 1px solid #000;
 
     }
@@ -357,5 +363,9 @@ h4.getPostTitle {
         padding: 12px 12px 12px 24px;
         text-align: left;
     }
+
     /* end.table */
+    
+
+    
 }
