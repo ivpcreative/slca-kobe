@@ -286,6 +286,31 @@ h4.getPostTitle {
 .address-def {}
 
 
+/*BOTOX*/
+.tbl-header{
+	background-color:paleturquoise;
+	font-weight: 900;
+}
+					
+.tbl-nav{
+	background-color:lightcyan;
+	font-weight: 700;
+}
+									
+.pickup{
+	color: #FF0000;
+	font-weight: 700;
+}
+
+.note{
+	color: #0000FF;
+}
+										
+.img-responsive{
+	margin: auto;
+}
+
+
 /* スマホアイコン (出しわけはweluka UIで操作)*/
 
 .spicon {}
