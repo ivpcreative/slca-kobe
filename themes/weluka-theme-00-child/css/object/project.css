@@ -1,52 +1,10 @@
-/* sub-style
-各サイト特有のCSSを記述
+/* 
+http://www.tam-tam.co.jp/tipsnote/html_css/post10205.html
+Projectレイヤー
+Projectレイヤーはプロジェクト固有のスタイルが該当します。プロジェクトで使い回すスタイルのほとんどはProjectレイヤーに追加することになります。
+※接頭語に p- が必要だが、sub-free.css を引き継ぐため、これに限らない。
 */
 
-
-/*デフォルト設定変更*/
-
-html {
-    font-size: 45.0%; //スマホの倍率、PCはメディアクエリに記載
-}
-
-body {
-    font-family: Hiragino Sans, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Roboto, "Droid Sans", YuGothic, "游ゴシック", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif;
-    color: #333333;
-    background-color: #fff;
-    //background-color: #fff0bb;
-    font-size: 1.5rem;
-}
-
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-size: inherit;
-    //margin: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-}
-
-a{
-    color: #00579C;
-    text-decoration: underline;
-}
-a:hover {
-    color: #002F55;
-  
-}
 
 #main-content h1 {
     margin: 0 0 0.2rem;
@@ -154,12 +112,15 @@ a:hover {
 }
 
 
-//カテゴリショートコード
+/*カテゴリショートコード*/
 .getPostDispArea .getPost {
+    /*
     border: 2px solid #9a9a9a;
-    padding: 15px;
-    margin: 10px 0px;
-    background-color: #e4f4ff;
+        background-color: #e4f4ff;
+      */
+    padding: 5px;
+    margin: 5px 0px;
+
 }
 
 .getPostDispArea .getPost:after {
@@ -169,12 +130,12 @@ a:hover {
 }
 
 .getPostImgArea {
-    width: 20%;
+    width: 10%;
     float: left;
 }
 
 .getPostStringArea {
-    width: 80%;
+    width: 90%;
     padding-left: 15px;
     float: left;
 }
@@ -296,21 +257,12 @@ h4.getPostTitle {
 	margin: auto;
 }
 
-
 /* 住所 */
-
 .address {
     font-size: 1.3rem;
 }
 
-.address-def {}
-
-
-
 /* スマホアイコン (出しわけはweluka UIで操作)*/
-
-.spicon {}
-
 .spicon li {
     list-style: none;
     float: left;
@@ -359,9 +311,5 @@ h4.getPostTitle {
         padding: 12px 12px 12px 24px;
         text-align: left;
     }
-
     /* end.table */
-    
-
-    
 }

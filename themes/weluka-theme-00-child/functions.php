@@ -5,8 +5,12 @@
 //同ディレクトリのstule.css を読み込む
 //https://github.com/wckansai2016/plugin-hands-on/blob/master/plugin_hands_on_4.md
 function add_file_links() {
-    wp_enqueue_style( 'child-sub-common-style', get_stylesheet_directory_uri() .'/css/sub-common-style.css' ); //CSS
-    wp_enqueue_style( 'child-sub-free-style', get_stylesheet_directory_uri() . '/css/sub-free-style.css' ); //CSS
+    wp_enqueue_style( 'child-foundation-css', get_stylesheet_directory_uri() .'/css/foundation.css' ); //CSS
+    wp_enqueue_style( 'child-layout-css', get_stylesheet_directory_uri() .'/css/layout.css' ); //CSS
+    wp_enqueue_style( 'child-object-utility-css', get_stylesheet_directory_uri() .'/css/utility/.css' ); //CSS
+    wp_enqueue_style( 'child-object-component-css', get_stylesheet_directory_uri() .'/css/object/component.css' ); //CSS
+    wp_enqueue_style( 'child-object-project-css', get_stylesheet_directory_uri() .'/css/object/project.css' ); //CSS
+    wp_enqueue_style( 'child-sub-free-css', get_stylesheet_directory_uri() . '/css/sub-free.css' ); //CSS
     wp_enqueue_script( 'child-library-jquery-fixHeightSimple', get_stylesheet_directory_uri() . '/js/library/jquery-fixHeightSimple.js' ); // 行の高さをそろえるプラグイン
         wp_enqueue_script( 'child-library-jquery-rwdImageMaps', get_stylesheet_directory_uri() . '/js/library/jquery.rwdImageMaps.min.js' ); // イメージマップをレスポンシブ対応させる
         wp_enqueue_script( 'child-common-js', get_stylesheet_directory_uri() . '/js/sub-common-js.js' ); //JS

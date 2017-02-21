@@ -4,3 +4,4 @@ backup-*/
 *media-from-ftp-tmp/
 *backwpup*/
 *backups/
+*/blog-news/*

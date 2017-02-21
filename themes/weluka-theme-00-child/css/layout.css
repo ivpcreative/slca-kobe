@@ -1,0 +1,20 @@
+/* 
+Layoutレイヤー
+Layoutレイヤーはワイヤーフレームに定義されるような大きな単位のコンテナブロックが該当します。このレイヤー以降はクラスセレクタのみを指定します。例外として、このLayoutレイヤーにだけは必要に応じてIDセレクタを指定することもできます。
+welukaの3パーツの接頭語は、Section = ls- 、 column = lc- 、row = lr- 、とします。 
+*/
+
+
+/* Section */
+ls-header{}
+
+/* colmun */
+lc-header{}
+
+/* Row */
+lr-header{}
+
+/* other */
+l-header
+l-footer
+

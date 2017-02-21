@@ -1,0 +1,86 @@
+/* fundation
+FoundationレイヤーはNormalize.cssやリセットCSS、要素セレクタ・属性セレクタのような最低限のスタイルを指定します。詳細度を極力弱く、影響範囲を極力狭くします。
+*/
+
+
+/*デフォルト設定変更*/
+
+html {
+    font-size: 45.0%; //スマホの倍率、PCはメディアクエリに記載
+}
+
+body {
+    font-family: Hiragino Sans, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Roboto, "Droid Sans", YuGothic, "游ゴシック", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    color: #333333;
+    background-color: #fff;
+    //background-color: #fff0bb;
+    font-size: 1.5rem;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    //margin: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+/* 管理画面に影響するので、#main-content [属性] でもfoundationに含める */
+#main-content h1 {
+    margin: 0 0 0.2rem;
+    padding: 0.8rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border: 2px solid #193E72;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+#main-content h2 {
+    font-size: 2.0rem;
+    border-left: 7px solid #193E72;
+    border-bottom: 1px solid #193E72;
+    padding: .6em .8em;
+    font-weight: bold;
+    margin: 20px 0px 5px 0px;
+}
+
+#main-content h4 {
+    border-left: 7px solid #193E72;
+    border-bottom: 1px solid #193E72;
+    padding: .6em .8em;
+    font-weight: bold;
+    margin: 20px 0px 5px 0px;
+}
+
+#main-content p {
+    margin-bottom: 1.2rem;
+}
+
+a{
+    color: #00579C;
+    text-decoration: underline;
+}
+a:hover {
+    color: #002F55;
+  
+}
+
+

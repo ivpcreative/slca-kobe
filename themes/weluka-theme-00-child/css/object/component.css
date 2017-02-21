@@ -1,7 +1,11 @@
-/*
-common-sub-style.css
-共通使用するCSS設定
+/* 
+http://www.tam-tam.co.jp/tipsnote/html_css/post10205.html
+Componentレイヤー
+Componentレイヤーは多くのプロジェクトで横断的に再利用できるような小さな単位のモジュールが該当します。OOCSSの構造の機能を担い、固有のサイズや装飾的なスタイルを極力含まないようにします。
+※通常、接頭語にc- が必要だが、ここでは、前CSS構造の sub-common.css の内容を引き継ぐ。
 */
+
+
 /*スマホでブレ対策*/
 @media (max-width: 991px) {
     #main > .weluka-container-fluid,
@@ -233,6 +237,3 @@ wpcf7 form.wpcf7-form p {
         transform: translateY(0);
     }
 }
-
-
-
