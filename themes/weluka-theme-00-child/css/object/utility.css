@@ -5,3 +5,17 @@ Sass側ではレスポンシブにも対応できるように、@eachを使っ�
 */
 
 /*ほぼboostrapに依存*/
+
+/* aly:2017/02/21 */
+.pickup{
+	color: #FF0000;
+	font-weight: 700;
+}
+
+.note{
+	color: #0000FF;
+}
+										
+.img-webbtn{
+	margin: auto;
+}

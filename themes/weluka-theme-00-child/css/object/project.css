@@ -244,18 +244,6 @@ h4.getPostTitle {
 	font-weight: 700;
 }
 					
-.pickup{
-	color: #FF0000;
-	font-weight: 700;
-}
-
-.note{
-	color: #0000FF;
-}
-										
-.img-webbtn{
-	margin: auto;
-}
 
 /* 住所 */
 .address {
@@ -313,3 +301,29 @@ h4.getPostTitle {
     }
     /* end.table */
 }
+
+/* aly:20170221 */
+.tbl-header{
+	background-color:paleturquoise;
+	font-weight: 900;
+}
+
+.tbl-nav{
+	background-color:lightcyan;
+	font-weight: 700;
+}
+
+.tbl-inner {
+	background-color:#ECE8EC;
+}
+
+.tbl-topics{
+	background-color: #FDD0FB;
+	font-weight: 700;
+}
+
+.tbl-info{
+	background-color: lemonchiffon;
+	font-weight: 700;
+}
+					
