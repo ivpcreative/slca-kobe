@@ -7,13 +7,14 @@
 function add_file_links() {
     wp_enqueue_style( 'child-foundation-css', get_stylesheet_directory_uri() .'/css/foundation.css' ); //CSS
     wp_enqueue_style( 'child-layout-css', get_stylesheet_directory_uri() .'/css/layout.css' ); //CSS
-    wp_enqueue_style( 'child-object-utility-css', get_stylesheet_directory_uri() .'/css/utility/.css' ); //CSS
+    wp_enqueue_style( 'child-object-utility-css', get_stylesheet_directory_uri() .'/css/object/utility.css' ); //CSS
     wp_enqueue_style( 'child-object-component-css', get_stylesheet_directory_uri() .'/css/object/component.css' ); //CSS
     wp_enqueue_style( 'child-object-project-css', get_stylesheet_directory_uri() .'/css/object/project.css' ); //CSS
+
     wp_enqueue_style( 'child-sub-free-css', get_stylesheet_directory_uri() . '/css/sub-free.css' ); //CSS
-    wp_enqueue_script( 'child-library-jquery-fixHeightSimple', get_stylesheet_directory_uri() . '/js/library/jquery-fixHeightSimple.js' ); // 行の高さをそろえるプラグイン
-        wp_enqueue_script( 'child-library-jquery-rwdImageMaps', get_stylesheet_directory_uri() . '/js/library/jquery.rwdImageMaps.min.js' ); // イメージマップをレスポンシブ対応させる
-        wp_enqueue_script( 'child-common-js', get_stylesheet_directory_uri() . '/js/sub-common-js.js' ); //JS
+    //wp_enqueue_script( 'child-library-jquery-fixHeightSimple', get_stylesheet_directory_uri() . '/js/library/jquery-fixHeightSimple.js' ); // 行の高さをそろえるプラグイン
+    wp_enqueue_script( 'child-library-jquery-rwdImageMaps', get_stylesheet_directory_uri() . '/js/library/jquery.rwdImageMaps.min.js' ); // イメージマップをレスポンシブ対応させる
+    wp_enqueue_script( 'child-common-js', get_stylesheet_directory_uri() . '/js/sub-common-js.js' ); //JS
     wp_enqueue_script( 'child-sub-free-js', get_stylesheet_directory_uri() . '/js/sub-free-js.js' ); //JS
 
 }
@@ -68,6 +69,29 @@ function add_wp_footer_custom(){ ?>
 <!-- footerに書きたいコード -->
 <?php }
 add_action( 'wp_footer', 'add_wp_footer_custom', 1 );
+
+
+/*-------------------------------------------*/
+/*  テキストエディタにクイックタグを追加
+/*-------------------------------------------*/
+//http://webtukuru.com/web/wordpress-quicktag/
+//https://wpdocs.osdn.jp/%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%BF%E3%82%B0API
+if ( !function_exists( 'add_quicktags_to_text_editor' ) ):
+function add_quicktags_to_text_editor() {
+  //スクリプトキューにquicktagsが保存されているかチェック
+  if (wp_script_is('quicktags')){?>
+    <script>
+      QTags.addButton('qt-pickup','Red','<span class="pickup">','</span>');
+      QTags.addButton('qt-note','Blue','<span class="note">','</span>');
+              QTags.addButton('qt-size150','150％','<span class="font-size-150">','</span>');
+      QTags.addButton('qt-size120','120％','<span class="font-size-120">','</span>');
+    </script>
+  <?php
+  }
+}
+endif;
+add_action( 'admin_print_footer_scripts', 'add_quicktags_to_text_editor' );
+
 
 /*-------------------------------------------*/
 /*  ショートコードで治療法ページ共通のアンカーリンクを呼び出す

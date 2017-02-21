@@ -58,15 +58,6 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
 }
 /* end.table*/
 
-.text-center {
-    text-align: center;
-}
-.text-left {
-    text-align:right;
-}
-.text-right {
-    text-align:left;
-}
 
 .readtext {
     text-align: center;
@@ -81,9 +72,6 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
     font-size: 1.4rem;
 }
 
-.text-imgflow-def {}
-
-.readtext-def {}
 
 .readtext .h2 {
     font-size: 26px;
@@ -243,7 +231,20 @@ h4.getPostTitle {
 	background-color:lightcyan;
 	font-weight: 700;
 }
-					
+.tbl-inner {
+	background-color:#ECE8EC;
+}
+
+.tbl-topics{
+	background-color: #FDD0FB;
+	font-weight: 700;
+}
+
+.tbl-info{
+	background-color: lemonchiffon;
+	font-weight: 700;
+}
+
 
 /* 住所 */
 .address {
@@ -301,29 +302,4 @@ h4.getPostTitle {
     }
     /* end.table */
 }
-
-/* aly:20170221 */
-.tbl-header{
-	background-color:paleturquoise;
-	font-weight: 900;
-}
-
-.tbl-nav{
-	background-color:lightcyan;
-	font-weight: 700;
-}
-
-.tbl-inner {
-	background-color:#ECE8EC;
-}
-
-.tbl-topics{
-	background-color: #FDD0FB;
-	font-weight: 700;
-}
-
-.tbl-info{
-	background-color: lemonchiffon;
-	font-weight: 700;
-}
-					
+				

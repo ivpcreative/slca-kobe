@@ -6,7 +6,7 @@ Sass側ではレスポンシブにも対応できるように、@eachを使っ�
 
 /*ほぼboostrapに依存*/
 
-/* aly:2017/02/21 */
+/* テキストカラー */
 .pickup{
 	color: #FF0000;
 	font-weight: 700;
@@ -15,7 +15,27 @@ Sass側ではレスポンシブにも対応できるように、@eachを使っ�
 .note{
 	color: #0000FF;
 }
-										
+
+.font-size-150{
+    font-size: 150%;
+}
+
+.font-size-120{
+    font-size: 120%;
+}
+
+
+/* テキストおよび画像位置 */
 .img-webbtn{
 	margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align:right;
+}
+.text-right {
+    text-align:left;
 }
