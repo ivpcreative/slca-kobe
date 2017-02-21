@@ -71,27 +71,6 @@ function add_wp_footer_custom(){ ?>
 add_action( 'wp_footer', 'add_wp_footer_custom', 1 );
 
 
-/*-------------------------------------------*/
-/*  テキストエディタにクイックタグを追加
-/*-------------------------------------------*/
-//http://webtukuru.com/web/wordpress-quicktag/
-//https://wpdocs.osdn.jp/%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%BF%E3%82%B0API
-if ( !function_exists( 'add_quicktags_to_text_editor' ) ):
-function add_quicktags_to_text_editor() {
-  //スクリプトキューにquicktagsが保存されているかチェック
-  if (wp_script_is('quicktags')){?>
-    <script>
-      QTags.addButton('qt-pickup','Red','<span class="pickup">','</span>');
-      QTags.addButton('qt-note','Blue','<span class="note">','</span>');
-              QTags.addButton('qt-size150','150％','<span class="font-size-150">','</span>');
-      QTags.addButton('qt-size120','120％','<span class="font-size-120">','</span>');
-    </script>
-  <?php
-  }
-}
-endif;
-add_action( 'admin_print_footer_scripts', 'add_quicktags_to_text_editor' );
-
 
 /*-------------------------------------------*/
 /*  ショートコードで治療法ページ共通のアンカーリンクを呼び出す
