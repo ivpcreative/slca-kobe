@@ -5,16 +5,30 @@ welukaの3パーツの接頭語は、Section = ls- 、 column = lc- 、row = lr-
 */
 
 
-/* Section */
-ls-header{}
+/* 
+Section 
+*/
 
-/* colmun */
-lc-header{}
+.ls-header{}
 
-/* Row */
-lr-header{}
+.ls-therapy-top{}
+.ls-therapy-anc{}
+.ls-therapy-comment{}
+.ls-therapy-flow{}
+.ls-therapy-point{}
+.ls-therapy-price{}
+.ls-therapy-qa{}
 
-/* other */
-l-header
-l-footer
+
+/*
+colmun
+*/
+.lc-header{}
+
+/* 
+Row
+*/
+.lr-header{}
+
+
 

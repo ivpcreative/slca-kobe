@@ -24,6 +24,18 @@ Sass側ではレスポンシブにも対応できるように、@eachを使っ�
     font-size: 120%;
 }
 
+/* リスト */
+.list-line {
+    font-size: 0;
+}
+
+.list-line li {
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 20%;
+}
+
+
 
 /* テキストおよび画像位置 */
 .img-webbtn{

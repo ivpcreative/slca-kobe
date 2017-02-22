@@ -194,11 +194,11 @@ h4.getPostTitle {
     background-color: #e6e6e6;
 }
 
-.therapy-anker {
+.list-line {
     font-size: 0;
 }
 
-.therapy-anker li {
+.list-line li {
     font-size: 1.2rem;
     display: inline-block;
     width: 20%;

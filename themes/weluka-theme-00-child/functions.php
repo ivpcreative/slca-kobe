@@ -75,10 +75,10 @@ add_action( 'wp_footer', 'add_wp_footer_custom', 1 );
 /*-------------------------------------------*/
 /*  ショートコードで治療法ページ共通のアンカーリンクを呼び出す
 /*-------------------------------------------*/
-function getTherapyAnker() {
+function getTherapyAnc() {
 /* ボタンを変数化*/
 $ankerlink = <<<EOT
-<ul class="therapy-anker">
+<ul class="list-line">
 <li><a class="menu" href="#comment">治療法の解説</a></li>
 <li><a class="menu" href="#flow">治療当日の流れ</a></li>
 <li><a class="menu" href="#point">治療のポイント</a></li>
@@ -88,7 +88,7 @@ EOT;
 
 return $ankerlink ;
 }
-add_shortcode('therapy-anker', 'getTherapyAnker');
+add_shortcode('therapy-anc', 'getTherapyAnc');
 
 /*-------------------------------------------*/
 /*  ショートコードでWEBボタンを呼び出す
