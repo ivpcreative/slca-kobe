@@ -41,16 +41,17 @@ h6 {
 
 /* 管理画面に影響するので、#main-content [属性] でもfoundationに含める */
 #main-content h1 {
-    margin: 0 0 0.2rem;
-    padding: 0.8rem;
+  
     font-size: 2.5rem;
     font-weight: bold;
     border: 2px solid #193E72;
+    /*
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
     -o-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
     -ms-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    */
 }
 
 #main-content h2 {
