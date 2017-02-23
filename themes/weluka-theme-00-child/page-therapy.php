@@ -13,27 +13,31 @@ global $weluka_themename;
 /* ボタンを変数化*/
 $terapybtn = <<<EOT
 
-<div id="" class="weluka-section " style="s-therapybtn">
-	<div class="weluka-container clearfix">
-		<div id="" class="weluka-row clearfix ">
+<div class="weluka-builder-content">
+<div id="" class="weluka-section " style="ls-therapy-webbtn">
+	<div class="weluka-container clearfix">    
+		<div id="" class="weluka-row clearfix">
 			<div id="" class="weluka-col weluka-col-md-12 ">
-				<div id="" class="weluka-row clearfix ">
-					<div id="" class="weluka-col weluka-col-md-12 ">
-						<div id="" class="weluka-button weluka-content weluka-text-left "><a href="#" class="js-therapy-sum weluka-btn weluka-btn-default btn-lg therapybtn therapybtn-def">概要</a>
-						</div>
-						<div id="" class="weluka-button weluka-content weluka-text-left "><a href="#" class="js-therapy-detail weluka-btn weluka-btn-default btn-lg therapybtn therapybtn-def">詳細</a>
-						</div>
-					</div>
-				</div>
+                <div id="" class="weluka-button weluka-content weluka-text-left "><a href="#" class="js-therapy-sum weluka-btn weluka-btn-default btn-lg therapybtn therapybtn-def">概要</a>
+                </div>
+                <div id="" class="weluka-button weluka-content weluka-text-left "><a href="#" class="js-therapy-detail weluka-btn weluka-btn-default btn-lg therapybtn therapybtn-def">詳細</a>
+                </div>
 			</div>
 		</div>
 	</div>
 </div>
+</div>
+
 EOT;
 
+
+    
 ?>
+<!--
 <div class="content-therapy">
+-->
 <?php    
+    
 echo $terapybtn ;
 
 if ( have_posts() ) :
@@ -46,9 +50,10 @@ endif;
 echo $terapybtn
 ?>
 
-<div id="" class="weluka-section " style="s-therapy-webbtn">
+<div class="weluka-builder-content">
+<div id="" class="weluka-section " style="ls-therapy-webbtn">
 	<div class="weluka-container clearfix">    
-		<div id="" class="weluka-row clearfix ">
+		<div id="" class="weluka-row clearfix">
 			<div id="" class="weluka-col weluka-col-md-12 ">
 				<div id="" class="weluka-button weluka-content weluka-text-center "><a href="#" class="weluka-btn weluka-btn-default">WEB予約へ</a>
 				</div>
@@ -56,7 +61,12 @@ echo $terapybtn
 		</div>
 	</div>
 </div>
-</div><!--end class=therapy-->
+</div>
+
+<!--
+</div>-->
+<!--end class=therapy-->
+
 <script>
 jQuery(function () {
     var pathname = location.pathname;

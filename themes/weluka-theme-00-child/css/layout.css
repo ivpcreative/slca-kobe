@@ -19,6 +19,10 @@ Section
 .ls-therapy-price{}
 .ls-therapy-qa{}
 
+/*
+Row
+*/
+.lr-header{}
 
 /*
 colmun
@@ -26,9 +30,5 @@ colmun
 .lc-header{}
 
 /* 
-Row
-*/
-.lr-header{}
-
 
 
