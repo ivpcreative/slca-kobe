@@ -11,22 +11,29 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
 
 
 /* table*/
+
+
 /*テーブルをスマホ時に構造を変化*/
-   #main-content table th {
-       background: #DFECF7;
-       white-space:nowrap;
+
+#main-content table th {
+    background: #DFECF7;
+    white-space: nowrap;
 }
+
+
 /*スマホ時のみテーブル構造変化(最初にblockをかけると上書きしてテーブルに戻させないため、特別に記載)*/
+
 @media only screen and (max-width:767px) {
-#main-content table th,
-#main-content table td {
+    #main-content table th,
+    #main-content table td {
         width: 100%;
         display: block;
         border-top: none;
     }
 }
-/* end.table*/
 
+
+/* end.table*/
 
 .readtext {
     text-align: center;
@@ -40,7 +47,6 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
     text-align: center;
     font-size: 1.4rem;
 }
-
 
 .readtext .h2 {
     font-size: 26px;
@@ -70,6 +76,7 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
 
 
 /*カテゴリショートコード*/
+
 .getPostDispArea .getPost {
     /*
     border: 2px solid #9a9a9a;
@@ -77,7 +84,6 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
       */
     padding: 5px;
     margin: 5px 0px;
-
 }
 
 .getPostDispArea .getPost:after {
@@ -173,54 +179,59 @@ h4.getPostTitle {
     width: 20%;
 }
 
-.btn-web{
-        margin: 0.7em 0;
+.btn-web {
+    margin: 0.7em 0;
     max-width: 100% !important;
     text-align: center;
 }
 
 .text-q {
-    color:#156ABE;
+    color: #156ABE;
 }
-.text-q > p::first-letter{
+
+.text-q > p::first-letter {
     font-size: 4rem;
 }
 
-.text-a > p::first-letter{
+.text-a > p::first-letter {
     color: #ff0000;
     font-size: 4rem;
 }
 
-.tbl-header{
-	background-color:paleturquoise;
-	font-weight: 900;
+.tbl-header {
+    background-color: paleturquoise;
+    font-weight: 900;
 }
 
-.tbl-nav{
-	background-color:lightcyan;
-	font-weight: 700;
+.tbl-nav {
+    background-color: lightcyan;
+    font-weight: 700;
 }
+
 .tbl-inner {
-	background-color:#ECE8EC;
+    background-color: #ECE8EC;
 }
 
-.tbl-topics{
-	background-color: #FDD0FB;
-	font-weight: 700;
+.tbl-topics {
+    background-color: #FDD0FB;
+    font-weight: 700;
 }
 
-.tbl-info{
-	background-color: lemonchiffon;
-	font-weight: 700;
+.tbl-info {
+    background-color: lemonchiffon;
+    font-weight: 700;
 }
 
 
 /* 住所 */
+
 .address {
     font-size: 1.3rem;
 }
 
+
 /* スマホアイコン (出しわけはweluka UIで操作)*/
+
 .spicon li {
     list-style: none;
     float: left;
@@ -240,14 +251,20 @@ h4.getPostTitle {
 
 
 /* スマホだけ非表示(モバイルファーストだが仕方なし) */
-@media screen and (max-width: 768px){
-#main-content table .tbl-nav{
-      display:none; /* PC only */ 
+
+@media screen and (max-width: 768px) {
+    #main-content table .tbl-nav {
+        display: none;
+        /* PC only */
+    }
 }
-}
+
+
 /* end.スマホだけ非表示 */
 
+
 /* 768px以上 */
+
 @media (min-width: 768px) {
     html {
         font-size: 62.5%;
@@ -256,14 +273,11 @@ h4.getPostTitle {
         padding-top: 40px;
     }
     /* table */
-    
     #main-content table th {
         padding: 12px 12px 12px 24px;
         text-align: left;
         border: 1px solid #000;
-
     }
-
     #main-content table td {
         border: 1px solid #000;
         padding: 12px 12px 12px 24px;
@@ -271,4 +285,3 @@ h4.getPostTitle {
     }
     /* end.table */
 }
-				
