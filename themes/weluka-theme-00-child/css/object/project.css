@@ -9,9 +9,15 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
     margin-bottom: 1.2rem;
 }
 
+/* list */
+.p-indent-list{
+    counter-increment: number;
+    list-style: outside none none;
+    padding: 10px 0 10px 30px;
+    text-indent: -3rem;
+}
 
 /* table*/
-
 
 /*テーブルをスマホ時に構造を変化*/
 
