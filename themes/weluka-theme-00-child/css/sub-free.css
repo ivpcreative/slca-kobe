@@ -11,12 +11,6 @@
     margin: 20px 0px 5px 0px;
 }
 
-.guide{
-    padding: 10px;
-    background-color: #F5F5F5;
-	color: #000000;
-}
-
 .ttl-sub{
 	font-size:1.5rem;
 	color: #000000;
@@ -46,6 +40,10 @@
 	background-color: #FEFEE9;
 }
 
+.box-gray{
+	background-color: #F5F5F5;
+}
+
 .ls-narrow{
 	padding: 0;
 }
@@ -61,4 +59,30 @@
 
 .img-arrow{
 	width: 20% !important;
+}
+
+/*YELLOW*/
+.tbl-item{
+	background-color: #FFFF00 !important;
+}
+
+/*VIOLET*/
+.tbl-main{
+	background-color: #afb3ff !important;
+}
+/*Light-Violet*/
+.tbl-contents{
+	background-color: #d2cdfc!important;
+}
+/*Light-Blue*/
+.tbl-contents2{
+	background-color:#e0e7ff !important;
+}
+
+.lr-border{
+	border: 1px solid #CCCCCC;
+}
+
+.lc-border{
+	border-right: 1px solid #CCCCCC;
 }
