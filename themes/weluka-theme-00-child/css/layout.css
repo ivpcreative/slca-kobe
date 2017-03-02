@@ -31,4 +31,12 @@ colmun
 
 /* 
 
-
+/*スマホ時のみテーブル構造変化(最初にblockをかけると上書きしてテーブルに戻させないため、特別に記載)*/
+@media only screen and (max-width:767px) {
+    .ls-therapy-point table th,
+    .ls-therapy-point table td {
+        width: 100%;
+        display: block;
+        border-top: none;
+    }
+}

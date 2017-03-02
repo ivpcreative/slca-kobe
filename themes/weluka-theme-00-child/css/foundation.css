@@ -93,5 +93,50 @@ a:hover {
     color: #002F55;
   
 }
+/* table*/
+
+/*テーブルをスマホ時に構造を変化*/
+
+#main-content table th {
+    background: #DFECF7;
+    white-space: nowrap;
+}
 
 
+/*スマホ時のみテーブル構造変化(最初にblockをかけると上書きしてテーブルに戻させないため、特別に記載)*/
+
+@media only screen and (max-width:767px) {
+    .ls-therapy-point table th,
+    .ls-therapy-point table td {
+        width: 100%;
+        display: block;
+        border-top: none;
+    }
+}
+
+    /* table */
+    #main-content table th {
+        padding: 12px 12px 12px 24px;
+        text-align: left;
+        border: 1px solid #000;
+    }
+    #main-content table td {
+        border: 1px solid #000;
+        padding: 12px 12px 12px 24px;
+        text-align: left;
+    }
+    /* end.table */
+
+
+/* end.table*/
+
+
+/* 768px以上 */
+
+@media (min-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+
+}

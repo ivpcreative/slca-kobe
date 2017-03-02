@@ -17,29 +17,6 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
     text-indent: -3rem;
 }
 
-/* table*/
-
-/*テーブルをスマホ時に構造を変化*/
-
-#main-content table th {
-    background: #DFECF7;
-    white-space: nowrap;
-}
-
-
-/*スマホ時のみテーブル構造変化(最初にblockをかけると上書きしてテーブルに戻させないため、特別に記載)*/
-
-@media only screen and (max-width:767px) {
-    #main-content table th,
-    #main-content table td {
-        width: 100%;
-        display: block;
-        border-top: none;
-    }
-}
-
-
-/* end.table*/
 
 .readtext {
     text-align: center;
@@ -256,38 +233,14 @@ h4.getPostTitle {
 }
 
 
-/* スマホだけ非表示(モバイルファーストだが仕方なし) */
-
-@media screen and (max-width: 768px) {
-    #main-content table .tbl-nav {
-        display: none;
-        /* PC only */
-    }
-}
-
-
-/* end.スマホだけ非表示 */
 
 
 /* 768px以上 */
 
 @media (min-width: 768px) {
-    html {
-        font-size: 62.5%;
-    }
+ 
     .img-arrowblue {
         padding-top: 40px;
     }
-    /* table */
-    #main-content table th {
-        padding: 12px 12px 12px 24px;
-        text-align: left;
-        border: 1px solid #000;
-    }
-    #main-content table td {
-        border: 1px solid #000;
-        padding: 12px 12px 12px 24px;
-        text-align: left;
-    }
-    /* end.table */
+
 }
