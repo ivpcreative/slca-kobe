@@ -209,6 +209,11 @@ h4.getPostTitle {
 }
 
 
+.price{
+    white-space: nowrap;
+}
+
+
 /* 住所 */
 
 .address {
