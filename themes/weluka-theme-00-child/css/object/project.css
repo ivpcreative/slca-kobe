@@ -240,7 +240,18 @@ h4.getPostTitle {
     text-align: center;
 }
 
+/* 画像アイコン */
+.sec_tab_content li {
+    float: left;
+    margin: 5px 2px 0 0;
+    visibility: hidden;
+    width:24%;
+    list-style: none;
+}
 
+.sec_tab_content li {
+
+}
 
 
 /* 768px以上 */
