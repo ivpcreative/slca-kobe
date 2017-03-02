@@ -12,11 +12,14 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
 /* list */
 .p-indent-list{
     counter-increment: number;
-    list-style: outside none none;
+
     padding: 10px 0 10px 30px;
     text-indent: -3rem;
 }
 
+.p-indent-list li{
+        list-style: inside none;
+}
 
 .readtext {
     text-align: center;
