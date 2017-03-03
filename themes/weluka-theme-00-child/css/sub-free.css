@@ -27,7 +27,7 @@
 }
 
 .box{
-	padding: 10px;
+	padding: 10px 10px 1px 10px;
 	margin-left: 10px;
     margin-right: 10px;
 }
@@ -54,6 +54,10 @@
 
 .ttl{
 	color: #002F55;
+	font-weight: bold;
+}
+
+.text-bold{
 	font-weight: bold;
 }
 
