@@ -144,7 +144,7 @@ Componentレイヤーは多くのプロジェクトで横断的に再利用で�
 .contactform-accept {
     text-align: center;
 }
-wpcf7 form.wpcf7-form p {
+ form.wpcf7-form p {
     margin: 1.5rem 0;
 }
 
@@ -154,6 +154,29 @@ wpcf7 form.wpcf7-form p {
 .contactform-btn-send-skin .weluka-btn {
     padding: 5px 60px;
 }
+
+
+
+.wpcf7 .c-wpcf7-2form{ /*名前等2列*/
+    width:47%;
+}
+.wpcf7 .c-wpcf7-3form{ /*名前等2列*/
+    width:35%;
+}
+.wpcf7 .c-wpcf7-4form{ /*名前等2列*/
+    width:25%;
+}
+
+.wpcf7 form.wpcf7-form .c-wpcf7-name{
+    margin-bottom: 0px;
+}
+.wpcf7 form.wpcf7-form .c-wpcf7-input{
+    margin-top: 0px;
+}
+
+/*入力チェック*/
+
+
 
 
 /*Googleスプレッドシート設定*/
