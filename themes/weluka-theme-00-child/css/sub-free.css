@@ -90,3 +90,7 @@
 .lc-border{
 	border-right: 1px solid #CCCCCC;
 }
+
+.tbl-voice th{
+	white-space: nowrap;
+}
