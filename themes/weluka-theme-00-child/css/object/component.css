@@ -19,6 +19,14 @@ Componentレイヤーは多くのプロジェクトで横断的に再利用で�
     }
 }
 
+/* newsの画像を真ん中配置 */
+
+.category-news img{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+
+}
 
 /*PC MENU文字非表示＆スマホのMENUを中央配置*/
 /* header メニュー調整*/
