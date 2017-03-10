@@ -94,3 +94,11 @@
 .tbl-voice th{
 	white-space: nowrap;
 }
+
+.tbl-text{
+	white-space: nowrap;
+}
+
+.list-item{
+	list-style: none;
+}
