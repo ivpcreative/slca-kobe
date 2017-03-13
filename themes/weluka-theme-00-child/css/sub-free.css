@@ -2,15 +2,6 @@
 ユーザーにて自由追加のCSS
 */
 
-#main-content h3 {
-    font-size: 2.0rem;
-    border-left: 7px solid #193E72;
-    border-bottom: 1px solid #193E72;
-    padding: .6em .8em;
-    font-weight: bold;
-    margin: 20px 0px 5px 0px;
-}
-
 .ttl-sub{
 	font-size:1.5rem;
 	color: #000000;
