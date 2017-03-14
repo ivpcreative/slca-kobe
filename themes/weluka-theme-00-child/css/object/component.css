@@ -170,11 +170,21 @@ Componentレイヤーは多くのプロジェクトで横断的に再利用で�
     padding: 5px 60px;
 }
 
-.wpcf7 h3{
+#main-content .wpcf7 h3{
         color: #004b64;
     font-size: 16px;
-    margin: 0 0 15px;
+    border:0px;
 }
+
+.wpcf7 .another-form{
+  background: #fafafa none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 0 0 30px;
+    padding: 5px;
+}
+
+
 .wpcf7 .c-wpcf7-1form{ /*名前等70%列*/
     width:65%;
 }
