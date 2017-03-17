@@ -182,4 +182,6 @@ function getCatItems($atts, $content = null) {
 }
 // 呼び出しの指定
 add_shortcode("getCategoryArticle", "getCatItems");
+
+
 ?>

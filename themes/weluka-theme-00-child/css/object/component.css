@@ -206,7 +206,6 @@ Componentレイヤーは多くのプロジェクトで横断的に再利用で�
 }
 
 /* SearchWindow */
- 
 .search-submit { 
    -moz-user-select: none;
     border: 1px solid transparent;
@@ -227,6 +226,7 @@ Componentレイヤーは多くのプロジェクトで横断的に再利用で�
  background-color: #303030;
  border-color: #3c3c3c ;
 }
+
 
 
 /*Googleスプレッドシート設定*/
@@ -310,5 +310,6 @@ Componentレイヤーは多くのプロジェクトで横断的に再利用で�
         transform: translateY(0);
     }
 }
+
 
 

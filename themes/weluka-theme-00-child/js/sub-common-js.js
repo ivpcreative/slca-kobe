@@ -9,15 +9,8 @@ jQuery(function () {
     jQuery('.animation2').css('visibility', 'hidden'); //スクロールアニメーションのパーツを非表示
     CommonSubObj = new CommonSubJs();
     CommonSubObj.PageTop();
-    CommonSubObj.moveSearch();
-    /*
-    var spMode = true;
-    spMode = subJsObj.getBlnSp();
-  */
 
-    //行の高さをそろえるClass名を記載(jquery-fixHeightSimple.js)
-    // jQuery(".home-bottom-text").fixHeightSimple();
-    //jQuery(".team-ex-text-skin").fixHeightSimple();
+    var spMode = CommonSubObj.getBlnSp(); //true false の判定をしているが、実処理はこの中ファンクション内で実施しなければならない。
 
     //レスポンシブにてイメージマップのリンクずれを自動修正する
     jQuery('img[usemap]').rwdImageMaps();
@@ -50,9 +43,6 @@ $win.on('scroll ', function () {
     });
 });
 /* end.スクロールアニメーション*/
-
-
-
 
 
 
@@ -99,6 +89,7 @@ var CommonSubJs = function () {
                         return false;
                     } else {
                         // SP,TABの処理
+                        CommonSubObj.moveSearch(); //リサイズ判定の中で実行しなければ、いつサイズが取れるか分からないので実行されない。
                         return true;
                     }
                 });
@@ -107,10 +98,10 @@ var CommonSubJs = function () {
         
         /*PCの検索ウィンドウをスマホのハンバーガーメニューに追加*/
         this.moveSearch = function () { //存在チェック
-            if(jQuery('.search-form').length){
+            if(jQuery('.search-form').length && jQuery('.js-movesearch').length == 0){ //検索ウィンドウの存在チェックかつ、2回追加しない
                 var search = jQuery(".search-form").prop('outerHTML');
                 jQuery("#err_name-mei").before(search);
-                jQuery('ul#menu-menu-navi').prepend('<li class="menu-item menu-item-type-custom menu-item-object-custom">'+ search +'</li>');
+                jQuery('ul#menu-menu-navi').prepend('<li class="js-movesearch menu-item menu-item-type-custom menu-item-object-custom">'+ search +'</li>');
                 }
             }
             /* moveSearch*/
