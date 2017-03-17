@@ -205,9 +205,28 @@ Componentレイヤーは多くのプロジェクトで横断的に再利用で�
     margin-top: 0px;
 }
 
-/*入力チェック*/
-
-
+/* SearchWindow */
+ 
+.search-submit { 
+   -moz-user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.35;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+.search-submit:hover,.search-submit:active { 
+ color: #fff;
+ background-color: #303030;
+ border-color: #3c3c3c ;
+}
 
 
 /*Googleスプレッドシート設定*/
