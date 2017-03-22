@@ -96,6 +96,10 @@ h4.getPostTitle {
     padding: 1px;
 }
 
+.navbar-brand img {
+    display: inline;
+}
+
 .weluka-nav a {
     display: inline;
     padding: 3px 3px;

@@ -203,7 +203,10 @@ Componentレイヤーは多くのプロジェクトで横断的に再利用で�
 }
 .wpcf7 form.wpcf7-form .c-wpcf7-input{
     margin-top: 0px;
+    margin-bottom: 2px;
 }
+
+
 
 /* SearchWindow */
 .search-submit { 
