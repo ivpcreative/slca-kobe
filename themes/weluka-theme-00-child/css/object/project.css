@@ -108,7 +108,8 @@ h4.getPostTitle {
 
 /*schedule*/
 .p-schedule{
-    padding:10px;
+    padding:0px;
+    border:1px solid #CECECE;
 }
 
 

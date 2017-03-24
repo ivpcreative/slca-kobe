@@ -18,7 +18,9 @@ Section
 .ls-therapy-point{}
 .ls-therapy-price{}
 .ls-therapy-qa{}
-
+.ls-therapy-point table th{
+    white-space: nowrap;
+}
 /*
 Row
 */
@@ -28,10 +30,11 @@ Row
 colmun
 */
 .lc-header{}
-
-.ls-therapy-point table th{
-    white-space: nowrap;
+.lc-schedule{
+    padding:20px;
 }
+
+
 /*スマホ時のみテーブル構造変化(最初にblockをかけると上書きしてテーブルに戻させないため、特別に記載)*/
 @media only screen and (max-width:767px) {
     .ls-therapy-point table th,
