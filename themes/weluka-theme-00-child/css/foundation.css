@@ -82,11 +82,11 @@ h6 {
 
 
 #main-content h4 {
-    border-left: 7px solid #193E72;
+    /*border-left: 7px solid #193E72;*/
     border-bottom: 1px solid #193E72;
-    padding: .6em .8em;
+    padding: 3px 4px;
     font-weight: bold;
-    margin: 20px 0px 5px 0px;
+    margin: 10px 0px 5px 0px;
 }
 
 p {
