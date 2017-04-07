@@ -18,17 +18,11 @@ $tw_title_encode=urlencode(get_the_title()."");
 <div class="share-btns">
   <ul class="cf">
     <li class="share-btns-item">
-      <a href="http://www.facebook.com/sharer.php?src=bm&u=<?php echo $url_encode;?>&t=<?php echo $title_encode;?>" target="_blank" class="share-btn fb"><i class="fa fa-facebook"></i> シェア</a>
+      <a href="http://www.facebook.com/sharer.php?src=bm&u=<?php echo $url_encode;?>&t=<?php echo $article_title;?>" target="_blank" class="share-btn fb"><i class="fa fa-facebook"></i> シェア</a>
     </li>
     <li class="share-btns-item">
-      <a href="http://twitter.com/intent/tweet?url=<?php echo $url_encode ?>&text=<?php echo $tw_title_encode ?>" target="_blank"  class="share-btn twitter"><i class="fa fa-twitter"></i> ツィート</a>
+      <a href="http://twitter.com/intent/tweet?url=<?php echo $url_encode ?>&text=<?php echo $article_title_encode ?>" target="_blank"  class="share-btn twitter"><i class="fa fa-twitter"></i> ツィート</a>
     </li>
 
   </ul>
 </div>
-    
-<?php 
-/*関連記事*/
-    wp_related_posts()
-?>
-    
