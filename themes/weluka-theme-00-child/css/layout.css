@@ -64,8 +64,12 @@ colmun
     padding-bottom: 2.5em;
     padding-top: 0;
 }
+
+#weluka-notparallax.weluka-container{
+     padding: 0.5em 3em;
+}
 .weluka-section {
-    padding: 0.5em 3em;
+    padding: 0.5em 0em;
 }
 
 
@@ -83,7 +87,9 @@ colmun
     	background-position:center bottom;
     	background-image:url('/wp-content/uploads/nav/line-sp.png');
 	}
-    
+ #weluka-notparallax.weluka-container{
+     padding: 0.5em 0em;
+}   
     .weluka-section {
     padding: 0.5em 0em;
     }
