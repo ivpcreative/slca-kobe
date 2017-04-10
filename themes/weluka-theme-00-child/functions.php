@@ -122,9 +122,9 @@ function getCatItems($atts, $content = null) {
 	// 処理中のpost変数をoldpost変数に退避
 	global $post;
 	$oldpost = $post;
-	
+
 	// カテゴリーの記事データ取得
-	$myposts = get_posts('numberposts='.$num.'&order=DESC&orderby=post_date&category='.$cat);
+	$myposts = get_posts('numberposts='.$num.'&order=DESC&orderby=post_date&category='.get_cat_ID($cat));
 	
 	if($myposts) {
 		// 記事がある場合↓
@@ -160,7 +160,9 @@ function getCatItems($atts, $content = null) {
 			$retHtml.= '<h4 class="getPostTitle">';
 			$retHtml.= '<a href="' . get_permalink() . '">' . the_title("","",false) . '</a>';
 			$retHtml.= '</h4>';
-			
+		//日付
+            $getDate = get_the_date();
+            $retHtml.= '<div class="getPostDate">' . $getDate . '</div>';
 			// 本文を抜粋して取得
 			$getString = get_the_excerpt();
 			$retHtml.= '<div class="getPostContent">' . $getString . '</div>';
