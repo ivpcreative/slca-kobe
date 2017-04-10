@@ -4,7 +4,6 @@ FoundationレイヤーはNormalize.cssやリセットCSS、要素セレクタ・
 
 
 /*デフォルト設定変更*/
-
 html {
     font-size: 45.0%; //スマホの倍率、PCはメディアクエリに記載
 }

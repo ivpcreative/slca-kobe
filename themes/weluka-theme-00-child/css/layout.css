@@ -21,17 +21,51 @@ Section
 .ls-therapy-point table th{
     white-space: nowrap;
 }
+.ls-narrow{
+	padding: 0;
+}
+
+
 /*
 Row
 */
 .lr-header{}
-
+.lr-border{
+	border: 1px solid #CCCCCC;
+}
+.lr-menu-qa{
+	margin-left: 15%;
+}
+.lr-home{
+	background-color: #efefef;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.lr-header{
+	display: flex;
+	flex-grow: 2;
+	align-self: flex-end;
+}
 /*
 colmun
 */
 .lc-header{}
 .lc-schedule{
     padding:20px;
+}
+.lc-border{
+	border-right: 1px solid #CCCCCC;
+}
+.lc-header{
+	width: 50vw;
+}
+
+#main-content {
+    padding-bottom: 2.5em;
+    padding-top: 0;
+}
+.weluka-section {
+    padding: 0.5em 3em;
 }
 
 
@@ -44,4 +78,14 @@ colmun
         border-top: none;
         
     }
+    	.lr-navbar{
+		background-repeat:no-repeat;
+    	background-position:center bottom;
+    	background-image:url('/wp-content/uploads/nav/line-sp.png');
+	}
+    
+    .weluka-section {
+    padding: 0.5em 0em;
+    }
+
 }

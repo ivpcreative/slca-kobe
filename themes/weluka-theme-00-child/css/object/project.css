@@ -4,6 +4,13 @@ Projectレイヤー
 Projectレイヤーはプロジェクト固有のスタイルが該当します。プロジェクトで使い回すスタイルのほとんどはProjectレイヤーに追加することになります。
 ※接頭語に p- が必要だが、sub-free.css を引き継ぐため、これに限らない。
 
+
+
+/* nav */
+.nav .menu-item{
+    font-size: 20px;
+}
+
 /* list */
 .p-indent-list{
     counter-increment: number;
@@ -253,11 +260,267 @@ h4.getPostTitle {
     list-style: none;
 }
 
-.sec_tab_content li {
+/* From sub-free */
+.ttl-sub{
+	font-size:1.5rem;
+	color: #000000;
+	font-weight: normal;
+}
 
+.text-case{
+	color: #002F55;
+	font-weight: bold;
+}
+
+.info-more{
+	margin-left: 10%;
+}
+
+.box{
+	padding: 10px 10px 1px 10px;
+	margin-left: 10px;
+    margin-right: 10px;
+}
+
+.box-blue{
+	background-color: #F4FBF9;
+}
+
+.box-red{
+	background-color: #FEFEE9;
+}
+
+.box-gray{
+	background-color: #F5F5F5;
+	border: 1px solid #CCCCCC;
 }
 
 
+.img-bottom{
+	margin-bottom:35px;
+}
+
+.ttl{
+	color: #002F55;
+	font-weight: bold;
+}
+
+.text-bold{
+	font-weight: bold;
+}
+
+.img-arrow{
+	width: 20% !important;
+}
+
+
+/*YELLOW*/
+.tbl-item{
+	background-color: #FFFF00 !important;
+}
+
+/*VIOLET*/
+.tbl-main{
+	background-color: #afb3ff !important;
+}
+/*Light-Violet*/
+.tbl-contents{
+	background-color: #d2cdfc!important;
+}
+/*Light-Blue*/
+.tbl-contents2{
+	background-color:#e0e7ff !important;
+}
+
+
+.tbl-voice th{
+	white-space: nowrap;
+}
+
+.tbl-text{
+	white-space: nowrap;
+}
+
+.tbl-fit tr th{
+	white-space: nowrap;
+}
+
+
+.list-item{
+	list-style: none;
+}
+
+.text-small{
+	font-size: 0.7em;
+}
+
+.text-normal{
+	font-size: 1.4em;
+}
+
+.text-large{
+	font-size: 2em;
+}
+
+.tbl-center tr th,.tbl-center tr td, .tbl-center td, .tbl-center{
+	text-align: center !important;
+}
+
+
+.text-q-menu{
+  color: #DEB1D3;
+  font-size: 4rem;
+}
+
+.text-a-menu{
+  color: #7BAFDE;
+  font-size: 4rem;
+  vertical-align: top !important;
+}
+
+.tbl-noborder tr th,.tbl-noborder tr td{
+	border: none !important;
+	vertical-align: middle;
+}
+
+
+
+.list-flex{
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.list-flex li{
+  padding: 5px;
+  margin-top: 10px;  
+  list-style: none; 
+  float: left;
+  min-width: 33%;
+  text-align: left;
+  margin-right: auto;
+  font-size: 1.2rem;
+  background-image: url(https://ssm001.kix.ad.jp/ex0040100617/icon_arrow_blue2.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px 6px;
+  padding-left: 10px;
+}
+
+.tbl-wide tr th {
+    white-space: nowrap;
+}
+
+
+.list-btn li{
+	list-style: none;
+	display: inline;
+}
+
+
+.list-btn{
+	width: 300px;
+	margin: 0 auto;
+}
+
+.box-btn{
+ 	width: 60%;
+	margin: 0 auto;
+	background-color: #9F9FF0;
+	padding: 25px 5px 25px 5px;
+	min-width: 300px;
+}
+
+
+.text-orange{
+	color: #ff8409;
+}
+
+
+
+
+.p-indent-list li::first-letter{
+	color: #0E4C7D;
+	font-weight: bold;
+}
+
+.text-bottom td{
+	vertical-align: bottom;
+}
+
+.border-gray{
+	border: 1px solid #CCCCCC;
+}
+
+.list-inside li{
+	list-style-position: outside;
+    list-style-type: circle;
+    margin-left: 32px;
+}
+
+.text-top{
+	color: #0075c1;
+}
+
+.bg-article{
+	background-image:url('/wp-content/uploads/menu/ico-article.jpg');
+}
+
+.bg-news{
+	background-image:url('/wp-content/uploads/menu/ico-news.jpg');
+}
+
+.bg-left{
+	background-repeat:no-repeat;
+    background-position:left top;
+    padding-left: 4%;
+    background-size: contain;
+}
+
+
+.list-nav ul li a{
+	padding: 5px 22px;
+    font-size: 1.5vw;
+}
+
+.list-nav ul li{
+	border-right: 1px solid #6a6a6a;
+}
+
+.list-nav ul li:last-child{
+	border: none;
+}
+
+
+.text-header,.text-header p{
+	margin: 0;
+}
+
+.btn-header{
+	width: 110px;
+    margin-top: 5px;
+}
+
+h4.getPostTitle{
+	margin-top: 0 !important;
+	color: #0075c1;	
+	border-bottom: none !important;
+	font-size: 1.2em;
+	font-weight: normal !important;
+}
+
+.getPostTitle a{
+	text-decoration: none;
+}
+
+.getPost{
+	border-bottom: 3px dotted #d6d6d6;
+}
 /* 768px以上 */
 
 @media (min-width: 768px) {
@@ -265,5 +528,45 @@ h4.getPostTitle {
     .img-arrowblue {
         padding-top: 40px;
     }
+	.list-flex li{
+	min-width: 50%;
+	}
 
+	.google-map iframe{
+	height: 300px;
+	min-width: 320px;
+	}
+
+	.google-map{
+	overflow: auto;
+	}
+
+	.tbl-wide tr th,.tbl-wide tr td{
+		 width: 100%;
+		 display: block;
+	}
+
+	.list-narrow{
+		padding-left: 5%;
+	}
+
+	.bg-left{
+		padding-left: 10%;
+	}
+
+	.list-nav ul li a {
+    	font-size: 2.0rem;
+        font-weight: 400;
+    }
+
+    .getPost{
+		border-bottom: 2px dotted #d6d6d6;
+	}
+
+	.getPostImgArea {
+    	width: 25%;
+	}
+	.getPostStringArea {
+		width: 75%;
+	}
 }
