@@ -47,7 +47,7 @@ h6 {
 
 
 /* 管理画面に影響するので、#main-content [属性] でもfoundationに含める */
-#main-content h1 {
+h1 {
   
     border-bottom: 2px solid #0074c1;
     color: #0074c1;
@@ -60,7 +60,7 @@ h6 {
 
 }
 
-#main-content h2 {
+h2 {
     background: #f5f5f5  no-repeat scroll center bottom;
     border-top: 1px solid #dadada;
     color: #183e70;
@@ -73,7 +73,7 @@ h6 {
 
 }
 
-#main-content h3 {
+h3 {
     font-size: 1.8rem;
     border-left: 7px solid #193E72;
     border-bottom: 1px solid #193E72;
@@ -81,7 +81,7 @@ h6 {
 }
 
 
-#main-content h4 {
+h4 {
     /*border-left: 7px solid #193E72;*/
     border-bottom: 1px solid #193E72;
     padding: 3px 4px;
