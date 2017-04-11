@@ -109,22 +109,28 @@ add_shortcode('btn-web', 'getBtnWeb');
 /*  ショートコードでカテゴリ一覧を呼び出す
 /*-------------------------------------------*/
 
-//　一覧記事取得関数 --------------------------------------------------------------------------------
-// "num" = 表示記事数, "cat" = カテゴリ番号
-// 呼び出し元での指定も可能 -> [getCategoryArticle num="x" cat="y"]
 
+//　一覧記事取得関数 --------------------------------------------------------------------------------
+// "num" = 表示記事数, "cat" = カテゴリスラング "body" = 記事本文の抜粋を表示するか？
+// 呼び出し元での指定も可能 -> [getCategoryArticle num="x" cat="y" body="true"]
 function getCatItems($atts, $content = null) {
 	extract(shortcode_atts(array(
 	  "num" => '2',
-	  "cat" => '12'
+	  "cat" => '12',
+      "body" => 'true'
 	), $atts));
 	
 	// 処理中のpost変数をoldpost変数に退避
 	global $post;
 	$oldpost = $post;
-
+    
+   
+    $cat_id = get_category_by_slug($cat);//スラッグをカテゴリIDに変換
+    $cat_id = $cat_id->cat_ID;
+    
+    //echo $cat_id."<br />";
 	// カテゴリーの記事データ取得
-	$myposts = get_posts('numberposts='.$num.'&order=DESC&orderby=post_date&category='.get_cat_ID($cat));
+	$myposts = get_posts('numberposts='.$num.'&order=DESC&orderby=post_date&category='.$cat_id);
 	
 	if($myposts) {
 		// 記事がある場合↓
@@ -164,9 +170,11 @@ function getCatItems($atts, $content = null) {
             $getDate = get_the_date();
             $retHtml.= '<div class="getPostDate">' . $getDate . '</div>';
 			// 本文を抜粋して取得
+
+        if($body == 'true'){
 			$getString = get_the_excerpt();
 			$retHtml.= '<div class="getPostContent">' . $getString . '</div>';
-			
+            }
 			$retHtml.= '</div></div>';
 			
 		endforeach;
