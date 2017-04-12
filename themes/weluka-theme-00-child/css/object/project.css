@@ -147,6 +147,27 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
     background-color: #e6e6e6;
 }
 
+.p-therapy-box{
+    border: 2px solid #0075c1;
+    padding: 5px 5px;
+}
+
+.p-therapy-box h3{
+    color: #5480bc;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 5px 0 5px 5px;
+    position: relative;
+    border-bottom: 0px;
+    border-left: 0px;
+    
+}
+.p-therapy-box a{
+ text-decoration: none;
+    
+}
+
 .list-line {
     font-size: 0;
 }
