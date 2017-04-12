@@ -150,6 +150,7 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
 .p-therapy-box{
     border: 2px solid #0075c1;
     padding: 5px 5px;
+    height: 80px;
 }
 
 .p-therapy-box h3{
