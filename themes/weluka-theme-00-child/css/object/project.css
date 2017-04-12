@@ -169,6 +169,11 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
     
 }
 
+.p-btn-therapy-contact{
+    width:110px;
+}
+
+
 .list-line {
     font-size: 0;
 }
@@ -315,6 +320,12 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
 	width: 20% !important;
 }
 
+/*single*/
+
+.weluka-single-meta{
+    margin-bottom: 10px;
+}
+
 
 /*YELLOW*/
 .tbl-item{
@@ -447,9 +458,6 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
 }
 
 
-
-
-
 .list-nav ul li{
 	border-right: 1px solid #6a6a6a;
 }
@@ -468,16 +476,18 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
     margin-top: 5px;
 }
 
-h4.getPostTitle{
+
+h4.getPostTitle, .weluka-list-title{
 	margin-top: 0 ;
 	color: #0075c1;	
 	border-bottom: none;
 	font-size: 1.2em;
   padding: 0;
   font-weight: bold;
+    border-left: none;
 }
 
-.getPostTitle a{
+.getPostTitle a,.weluka-list-title a{
 	text-decoration: none;
 }
 
@@ -542,8 +552,12 @@ h4.getPostTitle{
 
 /* 768px以上 */
 
-
 @media (min-width: 768px) {
+    
+    .p-btn-therapy-contact{
+    width:auto;
+    }
+    
     .img-arrowblue {
         padding-top: 0px;
     }
@@ -623,7 +637,6 @@ h4.getPostTitle{
       background-position: left top;
       background-size: contain;
     }
-
 
     .sub-menu li{
     	border-bottom: none;
