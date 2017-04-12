@@ -77,13 +77,6 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
 }
 
 
-
-h4.getPostTitle {
-    color: #193E72;
-    font-weight: bold;
-}
-
-
 /*heade navi*/
 
 .navbar-brand {
@@ -418,7 +411,7 @@ h4.getPostTitle {
     margin-left: 32px;
 }
 
-.text-top{
+.text-top, .text-top a{
 	color: #0075c1;
   font-weight: bold;
 }
@@ -459,6 +452,7 @@ h4.getPostTitle{
 	border-bottom: none;
 	font-size: 1.2em;
   padding: 0;
+  font-weight: bold;
 }
 
 .getPostTitle a{
@@ -467,6 +461,7 @@ h4.getPostTitle{
 
 .getPostDate{
     color: #91c3ea;
+    font-size: 0.8em;
 }
 
 .img-arrowblue {
@@ -523,7 +518,6 @@ h4.getPostTitle{
   padding-left: 10px;
 }
 
-
 /* 768px以上 */
 
 
@@ -556,14 +550,57 @@ h4.getPostTitle{
     }
 
     .getPostImgArea {
-        width: 10%;
+        width: 8vw;
         float: left;
     }
 
     .getPostStringArea {
         width: 90%;
-        padding-left: 15px;
+        padding-left: 1vw;
         float: left;
     }
+
+    .weluka-sidebar h4.getPostTitle{
+      font-weight: normal;
+      font-size: 1em;
+    }
+
+    .sidebar-nav{
+      border: 2px solid #0075c1;
+      margin: auto;
+      padding: 5px 20px;
+    }
+
+    .sidebar-nav h3{
+      border: none;
+      font-size: 1.2em !important;
+      color: #0075c1;
+    }
+
+    .sidebar-nav ul li{
+      width: 100%;
+      border-bottom: 1px solid #6a6a6a;
+      font-size: 1.2vw;
+      padding: 5px 0 5px 0;
+
+    }
+
+    .sidebar-nav ul li a{
+      text-decoration: none;
+      color: #6a6a6a;
+    }
+
+    .sidebar-ttl a{
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    .sidebar-bg{
+      padding-left: 3.2vw;
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: contain;
+    }
+
 }
 
