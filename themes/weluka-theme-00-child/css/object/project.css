@@ -325,7 +325,9 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
 .weluka-single-meta{
     margin-bottom: 10px;
 }
-
+.pull-link{
+    margin-bottom: 5px;
+}
 
 /*YELLOW*/
 .tbl-item{
