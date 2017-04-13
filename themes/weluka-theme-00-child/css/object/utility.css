@@ -1,4 +1,4 @@
-﻿/* 
+/* 
 utilityレイヤー
 Utilityレイヤーはいわゆる汎用クラスのことで、ほとんどの場合で単一のスタイルを持っています。確実にスタイルを適応させるために!importantを指定します。
 Sass側ではレスポンシブにも対応できるように、@eachを使ったMixinを使っています。
@@ -45,8 +45,8 @@ Sass側ではレスポンシブにも対応できるように、@eachを使っ�
     text-align: center;
 }
 .text-left {
-    text-align:right;
+    text-align:left;
 }
 .text-right {
-    text-align:left;
+    text-align:right;
 }

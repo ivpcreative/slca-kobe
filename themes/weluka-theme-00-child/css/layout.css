@@ -9,76 +9,99 @@ welukaの3パーツの接頭語は、Section = ls- 、 column = lc- 、row = lr-
 Section 
 */
 
-.ls-header{}
 
-.ls-therapy-top{}
-.ls-therapy-anc{}
-.ls-therapy-comment{}
-.ls-therapy-flow{}
-.ls-therapy-point{}
-.ls-therapy-price{}
-.ls-therapy-qa{}
-.ls-therapy-point table th{
+/*
+#weluka-main-header .ls-header{
+    padding:10px 50px 20px 50px;
+}
+*/
+
+.ls-therapy-top {}
+
+.ls-therapy-anc {}
+
+.ls-therapy-comment {}
+
+.ls-therapy-flow {}
+
+.ls-therapy-point {}
+
+.ls-therapy-price {}
+
+.ls-therapy-qa {}
+
+.ls-therapy-point table th {
     white-space: nowrap;
 }
-.ls-narrow{
-	padding: 0;
+
+.ls-narrow {
+    padding: 0;
 }
 
 
 /*
 Row
 */
-.lr-header{}
-.lr-border{
-	border: 1px solid #CCCCCC;
+
+.lr-header {}
+
+.lr-border {
+    border: 1px solid #CCCCCC;
 }
-.lr-menu-qa{
-	margin-left: 15%;
+
+.lr-menu-qa {
+    margin-left: 15%;
 }
-.lr-home{
-	background-color: #efefef;
-	padding-top: 10px;
-	padding-bottom: 10px;
+
+.lr-home {
+    background-color: #efefef;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.lr-header{
-	display: flex;
-	flex-grow: 2;
-	align-self: flex-end;
+
+.lr-header {
+    display: flex;
+    flex-grow: 2;
+    align-self: flex-end;
 }
+
+
 /*
 colmun
 */
-.lc-header{}
-.lc-schedule{
-    padding:20px;
-}
-.lc-border{
-	border-right: 1px solid #CCCCCC;
-}
-.lc-header{
-	width: 50vw;
-}
-.lc-therapy-box{
 
+.lc-header {}
+
+.lc-schedule {
+    padding: 20px;
 }
 
+.lc-border {
+    border-right: 1px solid #CCCCCC;
+}
 
+.lc-header {
+    width: 50vw;
+}
+
+.lc-therapy-box {}
 
 #main-content {
     padding-bottom: 2.5em;
     padding-top: 0;
 }
 
-#weluka-notparallax.weluka-container{
-     padding: 0.5em 3em;
+#weluka-notparallax.weluka-container {
+    padding: 0.5em 3em;
 }
+
 .weluka-section {
     padding: 0.5em 0em;
 }
 
 
 /*スマホ時のみテーブル構造変化(最初にblockをかけると上書きしてテーブルに戻させないため、特別に記載)*/
+
 @media only screen and (max-width:767px) {
     .ls-therapy-point table th,
     .ls-therapy-point table td,
@@ -87,19 +110,28 @@ colmun
         width: 100%;
         display: block;
         border-top: none;
-        
     }
-    .lr-navbar{
-		background-repeat:no-repeat;
-    	background-position:center bottom;
-    	background-image:url('/wp-content/uploads/nav/line-sp.png');
-	}
-    
- #weluka-notparallax.weluka-container{
-     padding: 0.5em 0em;
-}   
+    .lr-navbar {
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-image: url('/wp-content/uploads/nav/line-sp.png');
+    }
+    #weluka-notparallax.weluka-container {
+        padding: 0.5em 0em;
+    }
     .weluka-section {
-    padding: 0.5em 0em;
+        padding: 0.5em 0em;
     }
+}
 
+
+/* 768px以上 は非表示*/
+
+@media (min-width: 768px) {
+    .lr-header {
+        padding: 10px 150px 20px 150px;
+    }
+    .cl-header-tel{
+        padding-top: 40px;
+    }
 }
