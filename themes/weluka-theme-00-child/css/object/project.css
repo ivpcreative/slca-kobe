@@ -554,6 +554,52 @@ h4.getPostTitle, .weluka-list-title{
   padding-left: 10px;
 }
 
+.weluka-sidebar h4.getPostTitle{
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.sidebar-nav{
+  border: 2px solid #0075c1;
+  margin: auto;
+  padding: 5px 20px;
+}
+
+.sidebar-nav h3{
+  border: none;
+  font-size: 1.8rem;
+  color: #0075c1;
+}
+
+.menu li{
+  width: 100%;
+  border-bottom: 1px solid #6a6a6a;
+  font-size: 1.5rem;
+  padding: 5px 0 5px 0;
+}
+
+.sidebar-nav ul li a{
+  text-decoration: none;
+  color: #6a6a6a;
+}
+
+.sidebar-ttl a{
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.sidebar-bg{
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+}
+
+.sub-menu li{
+  border-bottom: none;
+  font-size: 1.2rem;
+}
+
 /* 768px以上 */
 
 @media (min-width: 768px) {
@@ -600,51 +646,8 @@ h4.getPostTitle, .weluka-list-title{
         float: left;
     }
 
-    .weluka-sidebar h4.getPostTitle{
-      font-weight: normal;
-      font-size: 1em;
-    }
-
-    .sidebar-nav{
-      border: 2px solid #0075c1;
-      margin: auto;
-      padding: 5px 20px;
-    }
-
-    .sidebar-nav h3{
-      border: none;
-      font-size: 1.8rem;
-      color: #0075c1;
-    }
-
-    .menu li{
-      width: 100%;
-      border-bottom: 1px solid #6a6a6a;
-      font-size: 1.5rem;
-      padding: 5px 0 5px 0;
-
-    }
-
-    .sidebar-nav ul li a{
-      text-decoration: none;
-      color: #6a6a6a;
-    }
-
-    .sidebar-ttl a{
-      text-decoration: none;
-      font-size: 1.2em;
-    }
-
     .sidebar-bg{
-      padding-left: 3.2vw;
-      background-repeat: no-repeat;
-      background-position: left top;
-      background-size: contain;
-    }
-
-    .sub-menu li{
-    	border-bottom: none;
-    	font-size: 1.2rem;
+      padding-left: 40px;
     }
 
 }
