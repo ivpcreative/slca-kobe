@@ -3,7 +3,49 @@
 */
 
 
+.footer-ttl{
+	font-size: 1.8rem;
+}
 
-@media only screen and (max-width:767px) {
+.footer-text{
+	font-size: 1.2rem;
+}
 
+.footer-notice{
+	color: #A60000;
+}
+
+.lc-footer{
+	margin: auto;
+}
+
+.ls-footer{
+	background-color: #7FC6E9;
+}
+
+.img-payment{
+	width: 54%;
+}
+
+.footer-small{
+	font-size: 1.9vw;
+}
+
+@media only screen and (min-width:767px) {
+
+	.lr-footer{
+		display: flex;
+	}
+
+	.lc-notice{
+ 		width: 30%;
+ 	}
+
+ 	.lc-sched{
+ 		width: 55%;
+ 	}
+
+ 	.footer-small{
+		font-size: 1.2rem;
+	}	
 }
