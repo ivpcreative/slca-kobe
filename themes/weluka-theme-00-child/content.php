@@ -197,8 +197,8 @@ if( is_single() ) {
 			echo '<div class="' . $welukaOutContainerType . '"><div class="weluka-row clearfix"><div class="weluka-col weluka-col-md-12">';
 		} ?>
 		<div class="post-nav-link weluka-mgtop-xl sp-pad clearfix">
-			<div class="pull-left"><?php previous_post_link('%link', __( '&laquo; 前の記事を読む', $weluka_themename ) ); ?></div>
-			<div class="pull-right"><?php next_post_link('%link', __( '後の記事を読む &raquo;', $weluka_themename ) ); ?> </div>
+			<div class="pull-left pull-link"><?php previous_post_link('%link', __( '&laquo; %title', $weluka_themename ),true,'' ); ?></div>
+			<div class="pull-right pull-link"><?php next_post_link('%link', __( '%title &raquo;', $weluka_themename ),true,'' ); ?> </div>
     	</div>
 		<?php if( $welukaOutContainerType !== '' ) {
 				echo '</div></div></div>';

@@ -44,45 +44,13 @@ Componentレイヤーは多くのプロジェクトで横断的に再利用で�
  */
 }
 
- /* 768px以上 は非表示*/
-@media (min-width: 768px) {
-    .navbar-brand {
-        display: none;
-    }
-}
-
-
-
-/* ハンバーガーメニュー調整 767以下*/
-@media (max-width: 767px) {
-    .header-menu-clm .weluka-wpmenu {
-        position: relative;
-    }
-    /*.header-menu-clm .navbar-header*/
-    .header-menu-clm .navbar-header {
-        // position: fixed; /*ついてくるヘッダ用*/
-        position: relative;
-        z-index: 999;
-        width: 100%;
-        left: 0;
-        top: -90px;
-    }
-    . weluka-nav-bar-v {
-        /*display: none;
-        メニューの表示非表示の操作はwekukaに直接設定
-        */
-        background-color: #252525;
-    }
-
-}
-
 
 /* share button */
 .share-btns {
 	clear: both;
 	margin-top: 10px;
 	margin-bottom: 40px;
-    padding :0 50px;
+    padding :0 10px;
     text-align: center;
 }
 .share-btns ul {
@@ -314,5 +282,44 @@ Componentレイヤーは多くのプロジェクトで横断的に再利用で�
     }
 }
 
+/* ハンバーガーメニュー調整 767以下(特殊モバイル用設定)*/
+@media (max-width: 767px) {
+    .header-menu-clm .weluka-wpmenu {
+        position: relative;
+    }
+    /*.header-menu-clm .navbar-header*/
+    .header-menu-clm .navbar-header {
+        // position: fixed; /*ついてくるヘッダ用*/
+        position: relative;
+        z-index: 999;
+        width: 100%;
+        left: 0;
+        top: -90px;
+    }
+    . weluka-nav-bar-v {
+        /*display: none;
+        メニューの表示非表示の操作はwekukaに直接設定
+        */
+        background-color: #252525;
+    }
+    .weluka-nav ul {
+    background-color: #fff;
+    }
+    .navbar-header{
+            background-image: url("/wp-content/uploads/nav/line-sp.png");/*.lr-navbar の背景でも設定しているが、メニューオープン時に必要*/
+    }
 
+}
+
+
+ /* 768px以上 は非表示*/
+@media (min-width: 768px) {
+    .navbar-brand {
+        display: none;
+    }
+    .share-btns {
+    padding :0 50px;
+    }
+    
+}
 
