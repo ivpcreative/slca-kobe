@@ -326,6 +326,10 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
     margin-bottom: 10px;
 }
 
+.pull-link{
+    margin-bottom: 5px;
+}
+
 
 /*YELLOW*/
 .tbl-item{
