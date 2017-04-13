@@ -302,13 +302,13 @@ Componentレイヤーは多くのプロジェクトで横断的に再利用で�
         */
         background-color: #252525;
     }
-    .weluka-nav ul {
-    background-color: #fff;
-    }
+
     .navbar-header{
             background-image: url("/wp-content/uploads/nav/line-sp.png");/*.lr-navbar の背景でも設定しているが、メニューオープン時に必要*/
     }
-
+    .weluka-nav-bar-h,.navbar-collapse {
+        background-color: #fff;
+    }
 }
 
 
