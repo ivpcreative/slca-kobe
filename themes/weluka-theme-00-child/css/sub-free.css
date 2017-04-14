@@ -31,6 +31,10 @@
 	font-size: 1.9vw;
 }
 
+.lc-ttl-banner{
+	padding: 0;
+}
+
 @media only screen and (min-width:767px) {
 
 	.lr-footer{
