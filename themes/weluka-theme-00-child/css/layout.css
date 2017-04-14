@@ -16,6 +16,8 @@ Section
 }
 */
 
+
+
 .ls-therapy-top {}
 
 .ls-therapy-anc {}
@@ -132,6 +134,6 @@ colmun
         padding: 10px 150px 20px 150px;
     }
     .cl-header-tel{
-        padding-top: 40px;
+        padding-top: 20px;
     }
 }
