@@ -102,6 +102,10 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
 
 /* Bogo */
 
+.bogo-language-switcher{
+    margin-left: auto;
+    margin-right: auto;
+}
 .bogo-line ul {
     display: table;
     table-layout: fixed;
@@ -647,6 +651,11 @@ h4.getPostTitle, .weluka-list-title{
     .sidebar-bg{
       padding-left: 40px;
     }
+    
+    .bogo-language-switcher{
+    margin-left: auto;
+    margin-right: 0;
+}
 
 }
 
