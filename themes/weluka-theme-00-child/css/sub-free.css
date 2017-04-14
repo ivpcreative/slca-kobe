@@ -35,6 +35,54 @@
 	padding: 0;
 }
 
+.menu li:before{
+	content: none;
+}
+
+.widget .menu ul.sub-menu {
+    margin-left: 12px;
+}
+
+.therapybtn-current{
+	background-color: #0075c2 !important;
+	color: #FFF !important;
+}
+
+.therapybtn-def{
+	padding: 10px 46px;	
+	margin: 0;
+	border: 2px solid #0075c2 !important;
+	background-color: #FFFFFF;
+	border-radius: 0;
+	text-decoration: none;
+	width: 46vw;
+}
+
+
+.ls-therapy-anc ul{
+	display: inline-block;
+}
+
+.ls-therapy-anc ul li{
+	width: 45vw;
+	background-color: #f4f4f4; 		
+	padding: 13px 0;
+	margin: 5px 7px 5px 0;
+	text-align: center;
+}
+
+.ls-therapy-anc ul li:nth-child(even){
+	margin-right: 0;
+}
+
+.ls-therapy-anc ul li a{
+	color: #0075c2;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+
+
 @media only screen and (min-width:767px) {
 
 	.lr-footer{
@@ -51,5 +99,22 @@
 
  	.footer-small{
 		font-size: 1.2rem;
-	}	
+	}
+
+	.therapybtn-def{
+		width: auto;
+	}
+
+	.ls-therapy-anc ul li{
+		width: 196px;
+	}
+
+	.ls-therapy-anc ul li:nth-child(even){
+		margin-right: 7px;
+	}
+
+	.ls-therapy-anc ul li:last-child{
+		margin-right: 0;
+	}
+
 }
