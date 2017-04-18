@@ -563,7 +563,7 @@ h4.getPostTitle, .weluka-list-title{
 }
 
 .sidebar-nav{
-  border: 2px solid #0075c1;
+  border: 3px solid #0075c1;
   margin: auto;
   padding: 5px 12px;
 }
@@ -572,6 +572,12 @@ h4.getPostTitle, .weluka-list-title{
   border: none;
   font-size: 1.8rem;
   color: #0075c1;
+  background-image: url(/wp-content/uploads/menu/ico-doctor.png);
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  padding-bottom: 0;
 }
 
 .menu li{
