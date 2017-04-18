@@ -127,13 +127,20 @@ colmun
 }
 
 
-/* 768px以上 は非表示*/
+/* 768px以上(PC表示)*/
 
 @media (min-width: 768px) {
     .lr-header {
-        padding: 10px 150px 20px 150px;
+        padding: 10px 20px 20px 20px;
     }
     .cl-header-tel{
         padding-top: 20px;
+    }
+}
+
+/* 992px(PC表示)*/
+@media (min-width: 992px) {
+    .lr-header {
+        padding: 10px 150px 20px 150px;
     }
 }
