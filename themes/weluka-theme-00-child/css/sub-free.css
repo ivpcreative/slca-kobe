@@ -85,6 +85,41 @@
 	border-bottom: none;
 }
 
+.lr-order{
+	display: flex;
+}
+
+.text-order{
+	color: #6ca6d3;
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.lc-ttl{
+	width: 52%;
+}
+
+.img-order{
+	width: 60%;
+}
+
+.lc-arrow{
+	width: 37%;
+}
+
+.lc-arrow img{
+	width: 30%;
+}
+
+.lc-desc{
+	width: 100%;
+}
+
+.border-gray{
+	border: 2px solid #eeeeee;
+}
+
 
 @media only screen and (min-width:767px) {
 
@@ -118,6 +153,23 @@
 
 	.ls-therapy-anc ul li:last-child{
 		margin-right: 0;
+	}
+
+	.lc-ttl{
+    	width: 30%;
+    	margin-right: 3rem;
+	}
+
+	.img-order{
+		width: 60%;
+	}
+
+	.lc-arrow{
+		width: 23%;
+	}
+
+	.text-order{
+		font-size: 1.8rem;
 	}
 
 }
