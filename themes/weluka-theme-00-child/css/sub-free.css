@@ -39,8 +39,29 @@
 	content: none;
 }
 
-.widget .menu ul.sub-menu {
-    margin-left: 12px;
+.widget_nav_menu ul{
+	background-color: #0075c1;
+}
+.menu li a{
+	display: block;
+	background-color: #FFF;
+	margin-left: 10px;
+	padding: 3px 0 3px 5px;
+	border: 1px solid #0075c1;
+	width: 65%;
+}
+
+.sub-menu li a{
+	border: 0;
+	width: auto;	
+}
+
+.sub-menu ul li a{
+	padding-left: 30px;
+}
+
+.widget .menu ul.sub-menu{
+	margin-left: 0;
 }
 
 .therapybtn-current{
@@ -170,6 +191,14 @@
 
 	.text-order{
 		font-size: 1.8rem;
+	}
+
+	.menu li{
+		font-size: 1.5rem;
+	}
+
+	.sub-menu li{
+		font-size: 1.2rem;
 	}
 
 }
