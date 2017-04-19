@@ -96,8 +96,8 @@ add_shortcode('therapy-anc', 'getTherapyAnc');
 function getBtnWeb() {
 /* ボタンを変数化*/
 $ankerlink = <<<EOT
-<a href="/mail_reservation.html">
-<img class="img-responsive img-webbtn" src="/wp-content/uploads/therapy/icons_bunner_reservation.jpg" alt="" width="" height="">
+<a href="/mail_reservation/">
+<img class="img-responsive img-webbtn" src="/wp-content/uploads/nav/ico-contact01.png" alt="" width="" height="">
 </a>
 EOT;
 
