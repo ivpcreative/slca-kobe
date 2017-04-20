@@ -147,34 +147,10 @@
 	color: #000;
 }
 
-.list-form ul {
+.lr-form{
 	float: right;
 }
 
-.list-form ul li{
-    background: #eaeaea;
-    background: -webkit-linear-gradient(#ffffff, #eaeaea); 
-    background: -o-linear-gradient(#ffffff, #eaeaea);
-    background: -moz-linear-gradient(#ffffff, #eaeaea); 
-    background: linear-gradient(#ffffff, #eaeaea); 
-	border-radius: 5px;
-	border: 2px solid #0075c1;
-	font-size: 1.5rem;
-	width: 169px;
-    display: inline-block;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-right: 5px;
-}
-
-.list-form ul li:last-child{
-	margin-right: 0;
-}
-
-.btn-header a{
-	margin: 0;
-}
 
 @media only screen and (min-width:767px) {
 
@@ -237,6 +213,11 @@
 
 	.lc-btn-form{
 		padding-right: 0;
+	}
+
+	.lr-navbar{
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 
 }
