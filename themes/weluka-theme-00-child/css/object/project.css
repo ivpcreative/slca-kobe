@@ -479,13 +479,13 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
 }
 
 .btn-header img{
-  width: 26vw;  
+  width: 25vw;  
   height: 32px !important;  
   margin-top: 8px;
 }
 
 .btn-header{
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 
