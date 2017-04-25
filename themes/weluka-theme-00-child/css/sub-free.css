@@ -35,22 +35,22 @@
 	content: none;
 }
 
-.widget_nav_menu ul{
+.menu li{
 	background-color: #0075c1;
 }
-.menu li a{
-	display: block;
-	background-color: #FFF;
-	margin-left: 10px;
-	padding: 3px 0 3px 5px;
-	border: 1px solid #0075c1;
-	width: 65%;
-	font-weight: bold;
+
+.p-sidebar-ttl{
+	color: #FFF;
 }
 
-.sub-menu li a{
-	border: 0;
-	width: auto;
+.menu li a{
+	display: block;
+	padding: 4px 0 3px 10px;
+	font-weight: bold;	
+}
+
+.sub-menu li{
+	background: #FFF;
 }
 
 .sub-menu ul li a{
@@ -73,20 +73,14 @@
 	background-color: #FFFFFF;
 	border-radius: 0;
 	text-decoration: none;
-	width: 46vw;
+	width: 43vw;
 }
 
-
-.ls-therapy-anc ul{
-	display: inline-block;
-}
-
-.ls-therapy-anc ul li{
-	width: 45vw;
-	background-color: #f4f4f4;
-	padding: 13px 0;
+.ls-therapy-anc ul li{			
 	margin: 5px 7px 5px 0;
+	display: inline-block;
 	text-align: center;
+	width: auto;
 }
 
 .ls-therapy-anc ul li:nth-child(even){
@@ -94,9 +88,14 @@
 }
 
 .ls-therapy-anc ul li a{
+	display: block;
 	color: #0075c2;
 	font-size: 1.5rem;
 	font-weight: bold;
+	width: 42vw;
+	padding: 15px 0;
+	background-color: #f4f4f4;
+	text-decoration: none;
 }
 
 .menu li:last-child{
@@ -139,7 +138,7 @@
 }
 
 
-.p-sidebar-ttl, .p-sidebar-subttl{
+.p-sidebar-subttl{
 	color: #000;
 }
 
@@ -197,7 +196,9 @@
     background: #91c3ea;
     color: #fff;
     margin-right: 20px;
-    width: 120px;
+    width: 80px;
+    font-size: 1.5rem;
+    padding: 5px 0;
 }
 
 .bogo-line ul li:last-child{
@@ -208,9 +209,10 @@
 	font-size: 4.5vw;
 }
 
-.text-hd-small{
+.text-hd-small,.text-hd-small a{
 	font-size: 2vw;
 	padding-left: 20px;
+	color: #000;
 }
 
 
@@ -236,8 +238,8 @@
 		width: auto;
 	}
 
-	.ls-therapy-anc ul li{
-		width: 194px;
+	.ls-therapy-anc ul li a{
+		width: 177px;
 	}
 
 	.ls-therapy-anc ul li:nth-child(even){
@@ -286,7 +288,7 @@
 		font-size: 3.5rem;
 	}
 
-	.text-hd-small{
-		font-size: 2rem;
-}
+	.text-hd-small,.text-hd-small a{
+		font-size: 1.2rem;
+	}
 }

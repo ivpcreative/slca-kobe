@@ -74,8 +74,8 @@ h2 {
 
 h3 {
     font-size: 1.8rem;
-    border-left: 7px solid #193E72;
-    border-bottom: 1px solid #193E72;
+    border-left: 7px solid #0075C1;
+    border-bottom: 1px solid #0075C1;
     font-size: 2rem;
     padding: 5px 10px;
         font-weight: bold;
@@ -84,7 +84,7 @@ h3 {
 
 h4 {
     /*border-left: 7px solid #193E72;*/
-    border-bottom: 1px solid #193E72;
+    border-bottom: 1px solid #0075C1;
     padding: 3px 4px;
     font-weight: bold;
     margin: 10px 0px 5px 0px;
