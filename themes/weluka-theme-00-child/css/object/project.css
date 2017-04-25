@@ -273,55 +273,55 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
 
 /* From sub-free */
 .ttl-sub{
-	font-size:1.5rem;
-	color: #000000;
-	font-weight: normal;
+  font-size:1.5rem;
+  color: #000000;
+  font-weight: normal;
 }
 
 .text-case{
-	color: #002F55;
-	font-weight: bold;
+  color: #002F55;
+  font-weight: bold;
 }
 
 .info-more{
-	margin-left: 10%;
+  margin-left: 10%;
 }
 
 .box{
-	padding: 10px 10px 1px 10px;
-	margin-left: 10px;
+  padding: 10px 10px 1px 10px;
+  margin-left: 10px;
     margin-right: 10px;
 }
 
 .box-blue{
-	background-color: #F4FBF9;
+  background-color: #F4FBF9;
 }
 
 .box-red{
-	background-color: #FEFEE9;
+  background-color: #FEFEE9;
 }
 
 .box-gray{
-	background-color: #F5F5F5;
-	border: 1px solid #CCCCCC;
+  background-color: #F5F5F5;
+  border: 1px solid #CCCCCC;
 }
 
 
 .img-bottom{
-	margin-bottom:35px;
+  margin-bottom:35px;
 }
 
 .ttl{
-	color: #002F55;
-	font-weight: bold;
+  color: #002F55;
+  font-weight: bold;
 }
 
 .text-bold{
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .img-arrow{
-	width: 20% !important;
+  width: 20% !important;
 }
 
 /*single*/
@@ -335,59 +335,59 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
 
 /*YELLOW*/
 .tbl-item{
-	background-color: #FFFF00 !important;
+  background-color: #FFFF00 !important;
 }
 
 /*VIOLET*/
 .tbl-main{
-	background-color: #afb3ff !important;
+  background-color: #afb3ff !important;
 }
 /*Light-Violet*/
 .tbl-contents{
-	background-color: #d2cdfc!important;
+  background-color: #d2cdfc!important;
 }
 /*Light-Blue*/
 .tbl-contents2{
-	background-color:#e0e7ff !important;
+  background-color:#e0e7ff !important;
 }
 
 
 .tbl-voice th{
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
 .tbl-text{
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
 .tbl-fit tr th{
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
 
 .list-item{
-	list-style: none;
+  list-style: none;
 }
 
 .text-small{
-	font-size: 0.7em;
+  font-size: 0.7em;
 }
 
 .text-normal{
-	font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 .text-large{
-	font-size: 2em;
+  font-size: 2em;
 }
 
 .tbl-center tr th,.tbl-center tr td, .tbl-center td, .tbl-center{
-	text-align: center !important;
+  text-align: center !important;
 }
 
 .tbl-noborder tr th,.tbl-noborder tr td{
-	border: none !important;
-	vertical-align: middle;
+  border: none !important;
+  vertical-align: middle;
 }
 
 .list-flex{
@@ -408,74 +408,75 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
 
 
 .list-btn li{
-	list-style: none;
-	display: inline;
+  list-style: none;
+  display: inline;
 }
 
 
 .list-btn{
-	width: 300px;
-	margin: 0 auto;
+  width: 300px;
+  margin: 0 auto;
 }
 
 .box-btn{
- 	width: 60%;
-	margin: 0 auto;
-	background-color: #9F9FF0;
-	padding: 25px 5px 25px 5px;
-	min-width: 300px;
+  width: 60%;
+  margin: 0 auto;
+  background-color: #9F9FF0;
+  padding: 25px 5px 25px 5px;
+  min-width: 300px;
 }
 
 
 .text-orange{
-	color: #ff8409;
+  color: #ff8409;
 }
 
 .p-indent-list li::first-letter{
-	color: #0E4C7D;
-	font-weight: bold;
+  color: #0E4C7D;
+  font-weight: bold;
 }
 
 .text-bottom td{
-	vertical-align: bottom;
+  vertical-align: bottom;
 }
 
 .border-gray{
-	border: 1px solid #CCCCCC;
+  border: 1px solid #CCCCCC;
 }
 
 .list-inside li{
-	list-style-position: outside;
+  list-style-position: outside;
     list-style-type: circle;
     margin-left: 32px;
 }
 
 .text-top, .text-top a{
-	color: #0075c1;
+  color: #0075c1;
   font-weight: bold;
   text-decoration: none;
 }
 
 .bg-article{
-	background-image:url('/wp-content/uploads/menu/ico-article.jpg');
+  background-image:url('/wp-content/uploads/menu/ico-article.jpg');
 }
 
 .bg-news{
-	background-image:url('/wp-content/uploads/menu/ico-news.jpg');
+  background-image:url('/wp-content/uploads/menu/ico-news.jpg');
 }
 
 
 .list-nav ul li{
-	border-right: 1px solid #6a6a6a;
+  border-right: 1px solid #6a6a6a;
 }
 
 .list-nav ul li:last-child{
-	border: none;
+  border: none;
 }
 
 
-.text-header,.text-header p{
-	margin: 0;
+.text-header,.text-header p, .text-header a{
+  margin: 0;
+  text-decoration: none;
 }
 
 .btn-header img{
@@ -490,17 +491,17 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
 
 
 h4.getPostTitle, .weluka-list-title{
-	margin-top: 0 ;
-	color: #0075c1;	
-	border-bottom: none;
-	font-size: 1.2em;
+  margin-top: 0 ;
+  color: #0075c1; 
+  border-bottom: none;
+  font-size: 1.2em;
   padding: 0;
   font-weight: bold;
   border-left: none;
 }
 
 .getPostTitle a,.weluka-list-title a{
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .getPostDate{
@@ -544,9 +545,10 @@ h4.getPostTitle, .weluka-list-title{
 }
 
 .list-nav ul li a{
-  font-size: 2.0rem;
+  font-size: 1.5rem;
+  padding: 5px 50px;
+  color: #000;
   font-weight: bold;
-    color: #000;
 }
 
 .getPost {
@@ -638,10 +640,6 @@ h4.getPostTitle, .weluka-list-title{
     .bg-left{        
         padding-left: 4%;
        
-    }
-
-    .list-nav ul li a{
-        font-weight: bold;
     }
 
     .getPost{

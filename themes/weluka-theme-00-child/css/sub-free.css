@@ -19,10 +19,6 @@
 	margin: auto;
 }
 
-.ls-footer{
-	background-color: #7FC6E9;
-}
-
 .img-payment{
 	width: 54%;
 }
@@ -160,13 +156,13 @@
 }
 
 .list-form ul li {
-  display: inline-block;
-	margin-right: 10px;
+  	display: inline-block;
+	margin-right: 5px;
 }
 
 .list-form ul li a:hover{
-	border-color: #0075c1;
-	color: #0075c1;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
 }
 
 .list-form ul li:last-child{
@@ -175,20 +171,48 @@
 
 .list-form ul li a{
 	display: block;
-	width: 169px;
+	width: 182px;
 	padding: 10px 0 10px 0;
 	background: #e4e4e4;
-  background: -webkit-linear-gradient(#fff, #e4e4e4);
-  background: -o-linear-gradient(#fff, #e4e4e4);
-  background: -moz-linear-gradient(#fff, #e4e4e4);
-  background: linear-gradient(#fff, #e4e4e4);
-	border: 2px solid #bfbfbf;
+  	background: -webkit-linear-gradient(#fff, #e4e4e4);
+  	background: -o-linear-gradient(#fff, #e4e4e4);
+  	background: -moz-linear-gradient(#fff, #e4e4e4);
+  	background: linear-gradient(#fff, #e4e4e4);
+	border: 2px solid #0075c1;
 	border-radius: 5px;
 	text-decoration: none;
 	font-weight: bold;
 	text-align: center;
-	color: #8e8d8d;
+	color: #0075c1;
 }
+
+.lr-home-therapy img{
+	border: 1px solid #636363;
+}
+.lr-home-therapy img:hover{
+	border: 1px solid #0075c1;
+}
+
+.bogo-line ul li{
+    background: #91c3ea;
+    color: #fff;
+    margin-right: 20px;
+    width: 120px;
+}
+
+.bogo-line ul li:last-child{
+	margin: 0;
+}
+
+.weluka-phone{
+	font-size: 4.5vw;
+}
+
+.text-hd-small{
+	font-size: 2vw;
+	padding-left: 20px;
+}
+
 
 @media only screen and (min-width:767px) {
 
@@ -258,4 +282,11 @@
 		padding-bottom: 10px;
 	}
 
+	.weluka-phone{
+		font-size: 3.5rem;
+	}
+
+	.text-hd-small{
+		font-size: 2rem;
+}
 }
