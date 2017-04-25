@@ -171,7 +171,7 @@
 .list-form ul li a{
 	display: block;
 	width: 182px;
-	padding: 10px 0 10px 0;
+	padding: 8px 0;
 	background: #e4e4e4;
   	background: -webkit-linear-gradient(#fff, #e4e4e4);
   	background: -o-linear-gradient(#fff, #e4e4e4);
@@ -194,11 +194,11 @@
 
 .bogo-line ul li{
     background: #91c3ea;
-    color: #fff;
-    margin-right: 20px;
-    width: 80px;
-    font-size: 1.5rem;
-    padding: 5px 0;
+    color: #FFFFFF;
+    margin: 0 20px 10px 0;
+    width: 50px;
+    font-size: 1rem;
+    padding: 2px 0;
 }
 
 .bogo-line ul li:last-child{
@@ -213,6 +213,10 @@
 	font-size: 2vw;
 	padding-left: 20px;
 	color: #000;
+}
+
+.post-border{
+	border-bottom: 2px dotted #d6d6d6;	
 }
 
 
@@ -291,4 +295,15 @@
 	.text-hd-small,.text-hd-small a{
 		font-size: 1.2rem;
 	}
+
+	.post-border{
+		border-bottom: 3px dotted #d6d6d6;
+	}
+
+	.bogo-line ul li{
+    	width: 85px;
+    	padding: 5px 0;
+    	font-size: 1.2rem;
+}
+
 }

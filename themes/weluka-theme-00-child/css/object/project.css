@@ -104,7 +104,6 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
 
 .bogo-language-switcher{
     margin-left: auto;
-    margin-right: auto;
 }
 .bogo-line ul {
     display: table;
@@ -374,7 +373,7 @@ Projectレイヤーはプロジェクト固有のスタイルが該当します�
 }
 
 .text-normal{
-  font-size: 1.4em;
+  font-size: 2.2rem;
 }
 
 .text-large{
@@ -494,7 +493,7 @@ h4.getPostTitle, .weluka-list-title{
   margin-top: 0 ;
   color: #0075c1; 
   border-bottom: none;
-  font-size: 1.2em;
+  font-size: 1.5rem;
   padding: 0;
   font-weight: bold;
   border-left: none;
@@ -552,7 +551,6 @@ h4.getPostTitle, .weluka-list-title{
 }
 
 .getPost {
-  border-bottom: 2px dotted #d6d6d6;
   display: flex;
 }
 
@@ -600,7 +598,7 @@ h4.getPostTitle, .weluka-list-title{
 
 .sidebar-ttl a{
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 2rem;
 }
 
 .sidebar-bg{
@@ -642,10 +640,6 @@ h4.getPostTitle, .weluka-list-title{
        
     }
 
-    .getPost{
-        border-bottom: 3px dotted #d6d6d6;
-    }
-
     .getPostImgArea {
         width: 8vw;
         float: left;
@@ -662,9 +656,13 @@ h4.getPostTitle, .weluka-list-title{
     }
     
     .bogo-language-switcher{
-    margin-left: auto;
-    margin-right: 0;
-}
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    h4.getPostTitle, .weluka-list-title{
+      font-size: 2rem;
+    }
 
 }
 
