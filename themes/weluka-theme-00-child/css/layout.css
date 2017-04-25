@@ -16,8 +16,6 @@ Section
 }
 */
 
-
-
 .ls-therapy-top {}
 
 .ls-therapy-anc {}
@@ -101,6 +99,11 @@ colmun
     padding: 0.5em 0em;
 }
 
+.weluka-row {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
 
 /*スマホ時のみテーブル構造変化(最初にblockをかけると上書きしてテーブルに戻させないため、特別に記載)*/
 
@@ -133,12 +136,18 @@ colmun
     .lr-header {
         padding: 0 20px 0 20px;
     }
-    .cl-header-tel{
+    .cl-header-tel {
         padding-top: 20px;
+    }
+    .weluka-row {
+        padding-right: 0px;
+        padding-left: 0px;
     }
 }
 
+
 /* 992px(PC表示)*/
+
 @media (min-width: 992px) {
     .lr-header {
         padding: 0 150px 0 150px;
