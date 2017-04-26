@@ -63,6 +63,10 @@ Row
     display: flex;
     flex-grow: 2;
     align-self: flex-end;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
 }
 
 

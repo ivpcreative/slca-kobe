@@ -183,6 +183,7 @@
 	font-weight: bold;
 	text-align: center;
 	color: #0075c1;
+	font-size: 1.5rem;
 }
 
 .lr-home-therapy img{
@@ -195,28 +196,32 @@
 .bogo-line ul li{
     background: #91c3ea;
     color: #FFFFFF;
-    margin: 0 20px 10px 0;
     width: 50px;
     font-size: 1rem;
     padding: 2px 0;
+    border-right: 2px solid #fff;
 }
 
 .bogo-line ul li:last-child{
-	margin: 0;
+	border-right: none;
 }
 
 .weluka-phone{
 	font-size: 4.5vw;
 }
 
-.text-hd-small,.text-hd-small a{
-	font-size: 2vw;
+.text-hd-small{
+	font-size: 2.5vw;
 	padding-left: 20px;
-	color: #000;
 }
 
 .post-border{
-	border-bottom: 2px dotted #d6d6d6;	
+	border-bottom: 2px dotted #d6d6d6;
+	margin-top: 0;
+}
+
+.top-ttl a{
+	text-decoration: none;
 }
 
 
@@ -289,11 +294,11 @@
 	}
 
 	.weluka-phone{
-		font-size: 3.5rem;
+		font-size: 3rem;
 	}
 
 	.text-hd-small,.text-hd-small a{
-		font-size: 1.2rem;
+		font-size: 1.8rem;
 	}
 
 	.post-border{
