@@ -18,8 +18,6 @@ Section
 
 .ls-therapy-top {}
 
-.ls-therapy-anc {}
-
 .ls-therapy-comment {}
 
 .ls-therapy-flow {}
@@ -36,6 +34,32 @@ Section
 
 .ls-narrow {
     padding: 0;
+}
+
+.ls-sidebar{
+    padding-top: 2.5rem;
+}
+
+.ls-therapy-anc ul li{          
+    margin: 5px 7px 5px 0;
+    display: inline-block;
+    text-align: center;
+    width: auto;
+}
+
+.ls-therapy-anc ul li:nth-child(even){
+    margin-right: 0;
+}
+
+.ls-therapy-anc ul li a{
+    display: block;
+    color: #0075c2;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 42vw;
+    padding: 15px 0;
+    background-color: #f4f4f4;
+    text-decoration: none;
 }
 
 
@@ -59,6 +83,14 @@ Row
     padding-bottom: 10px;
 }
 
+.lr-form{
+    float: right;
+}
+
+.lr-order{
+    display: flex;
+}
+
 .lr-header {
     display: flex;
     flex-grow: 2;
@@ -69,24 +101,53 @@ Row
     display: -ms-flexbox;
 }
 
+.lr-home-therapy img{
+    border: 1px solid #636363;
+}
+.lr-home-therapy img:hover{
+    border: 1px solid #0075c1;
+}
+
 
 /*
 colmun
 */
 
-.lc-header {}
+.lc-header {
+    width: 50vw;
+    padding: 0 5px;
+}
+
+.lc-footer{
+    margin: auto;
+}
 
 .lc-schedule {
     padding: 20px;
 }
 
 .lc-border {
-    border-right: 1px solid #CCCCCC;
+    border: none;
 }
 
-.lc-header {
-    width: 50vw;
-    padding: 0 5px;
+.lc-ttl-banner{
+    padding: 0;
+}
+
+.lc-ttl{
+    width: 52%;
+}
+
+.lc-arrow{
+    width: 37%;
+}
+
+.lc-arrow img{
+    width: 30%;
+}
+
+.lc-desc{
+    width: 100%;
 }
 
 .lc-therapy-box {}
@@ -148,6 +209,54 @@ colmun
         padding-right: 0px;
         padding-left: 0px;
     }
+
+    .ls-therapy-anc ul li a{
+        width: 177px;
+    }
+
+    .ls-therapy-anc ul li:nth-child(even){
+        margin-right: 7px;
+    }
+
+    .ls-therapy-anc ul li:last-child{
+        margin-right: 0;
+    }
+
+    .lr-footer{
+        display: flex;
+    }
+
+    .lr-navbar{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .lc-notice{
+        width: 30%;
+    }
+
+    .lc-sched{
+        width: 55%;
+    }
+
+    .lc-ttl{
+        width: 30%;
+        margin-right: 3rem;
+    }
+
+    .lc-arrow{
+        width: 23%;
+    }
+
+    .lc-btn-form{
+        padding-right: 0;
+    }
+
+    .lc-border {
+        border-right: 1px solid #CCCCCC;
+        padding-bottom: 2rem;
+    }
+
 }
 
 
